@@ -64,13 +64,50 @@
           </div>
 
           <h1 class="google"><span id="blue">G</span><span id="red">o</span><span id="yellow">o</span><span id="blue">g</span><span id="green">l</span><span id="red">e</span></h1>
+
+<script type="text/javascript">
+    var urls = [
+        "http://www.kittenwar.com/",
+        'http://heeeeeeeey.com/',
+        'http://eelslap.com/',
+        'http://www.staggeringbeauty.com/',
+        'http://www.omfgdogs.com/',
+        'http://burymewithmymoney.com/',
+        'http://www.fallingfalling.com/',
+        'http://ducksarethebest.com/',
+        'http://www.republiquedesmangues.fr/',
+        'http://www.trypap.com/',
+        'http://www.hristu.net/',
+        'http://www.partridgegetslucky.com/',
+        'http://www.rrrgggbbb.com/',
+        'http://www.sanger.dk/',
+        'http://www.geodu.de/',
+        'http://beesbeesbees.com/',
+        'http://breakglasstosoundalarm.com/',
+        'http://www.koalastothemax.com/',
+        'http://grandpanoclothes.com/',
+        'http://www.everydayim.com/',
+        'http://www.haneke.net/',
+        'http://instantostrich.com/',
+        'http://r33b.net/',
+        'http://cat-bounce.com/'
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+        
+    }
+
+
+</script>
           <form>
           <input type="text" title="Search" class="gcse-search" data-resultsUrl="http://www.example.com" data-newWindow="true" data-queryParameterName="search">
-          <input type="submit" value="Google Search" id="search_button">
-          <a href="stats.html">
+          <a href="#" target="_blank"><input type="submit" value="Google Search" id="search_button" onClick="goSomewhere(); return false;">
+          </a>
 
             <input type="submit2" value="What's More">
-          </a>
+          
                          <!--  <script>
   (function() {
     var cx = '011833858776650720395:4l5dii3zv2w';
