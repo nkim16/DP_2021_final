@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+div{
+  display: block;
+}
+
+body{
+  text-align: center;
+  margin-top: 20%;
+  color: red;
+  font-size: 4vw;
+}
+</style>
+<body>
+
+<div class="a" id="changeText"></div>
+
+
+
+<script>
+var text = ["Welcome", "Hi", "Sup dude"];
+var counter = 0;
+var elem = document.getElementById("changeText");
+var inst = setInterval(change, 1000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}
+
+
+</script>
+
+</body>
+</html>

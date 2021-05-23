@@ -1,9 +1,42 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight:400;
-  font-size: 1.6em;
-  color:blue;
-  margin: auto;
-  padding:2%;
 
+  font-size: 1.2em;
+  color:blue;
+  margin: 100px;
+  margin-top:40px;
+  padding:2%;
+  font-family: input-serif-condensed, serif;
+
+font-weight: 200;
+
+font-style: normal;
+background-color: #e6eced;
+
+}
+
+.highlight{
+	background-color: #daff00;
+}
+
+.list_left{
+  text-align: left;
+  left: 2%;
+    display: inline;
+    position: absolute;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  top:3%;
+
+}
+
+.textlink:hover {
+  text-decoration: underline;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
 }
