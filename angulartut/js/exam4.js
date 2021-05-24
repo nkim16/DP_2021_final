@@ -1,64 +1,41 @@
+// Define the AngularJS Module
+var app4 = angular.module('app4', []);
 
+// Define the Controller and implement the Scope
+app4.controller('eventCtrl', function($scope) {
+  $scope.blur = 0;
+  $scope.click = 0;
+  $scope.dblclick = 0;
+  $scope.copy = 0;
+  $scope.paste = 0;
+  $scope.cut = 0;
+  $scope.focus = 0;
+  $scope.change = 0;
+  $scope.keydown = function(e) {
+    // Works for the basic characters and numbers
+    $scope.kdKey = String.fromCharCode(e.keyCode);
+  };
+  $scope.mouseenter = 0;
+  $scope.mouseleave = 0;
 
-// function createWanderingDiv() {
-//     var img, left, top, counter, interval;
+  // Used to disable button
+  $scope.disableButton = true;
 
-//     img = document.createElement('img');
+  // Used to show and hide elements
+  $scope.daytimeButton = true;
 
-//     img.src = "1.png";
-
-//     left = 200;
-//     top  = 200;
-//     img.style.position = "absolute";
-//     img.style.left = left + "px";
-//     img.style.top = top + "px";
-//     img.style.width = "200px";  // Make these match the image...
-//     img.style.height = "200px"; // ...or leave them out.
-
-//     img.style.zIndex = 100; // Or whatever
-
-//     document.body.appendChild(img);
-
-//     counter = 50;
-//     interval = 200; // ms
-//     window.setTimeout(wanderAround, interval);
-
-//     function wanderAround() {
-
-//         --counter;
-//         if (counter < 0)
-//         {
-//             // Done; remove it
-//             document.body.removeChild(img);
-//         }
-//         else
-//         {
-//             // Animate a bit more
-//             left += Math.floor(Math.random() * 20) - 10;
-//             if (left < 0)
-//             {
-//                 left = 0;
-//             }
-//             top  += Math.floor(Math.random() * 10)  - 5;
-//             if (top < 0)
-//             {
-//                 top = 0;
-//             }
-//             img.style.left = left + "px";
-//             img.style.top  = top  + "px";
-
-//             // Re-trigger ourselves
-//             window.setTimeout(wanderAround, interval);
-//         }
-//     }
-// }
-
-// (function($){
-//     $.fn.group = function() {
-//         console.log(2);
-//         setTimeout(showpanel, 5000)
-//     }; 
-//  });
+  // Used for table
+  $scope.capitals = [
+    {"City": "Montgomery",
+    "State": "Alabama"},
+    {"City": "Juneau",
+    "State": "Alaska"},
+    {"City": "Phoenix",
+    "State": "Arizona"},
+    {"City": "Little Rock",
+    "State": "Arkansas"}
+  ];
+});
 
 
 function randomlinks(){
@@ -210,4 +187,3 @@ function calcSpeed(prev, next) {
     return speed;
 
 }
-
