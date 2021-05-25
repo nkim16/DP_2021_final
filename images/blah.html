@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html>
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/mjy2iod.css">
+    <title>Images</title>
+</head>
 <style>
+body{
+    color: yellow;
+  text-shadow: -1px 0 #0000ff, 0 1px black, 1px 0 #ff5abd, 0 -1px black;
+    font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.img__img{
+  opacity: 0;
+}
+.img__img:hover{
+  opacity: 1;
+  transition: opacity .75s ease-in-out;
+  -moz-transition: opacity .75s ease-in-out;
+  -webkit-transition: opacity .75s ease-in-out;
+}
 #mydiv, .draggable {
   position: absolute;
   z-index: 9;
-  background-color: #f1f1f1;
+  background-color: white;
   text-align: center;
-  border: 1px solid #d3d3d3;
+  border: 2px solid white;
   cursor: move;
     padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #2196F3;
   color: #fff;
+  left: 40%;
+  top:30%;
+   box-shadow: 5px 10px white;
+   cursor: pointer;
+}
+
+.draggable:hover{
+    position: absolute;
+  z-index: 9;
+  background-color: white;
+  text-align: center;
+  border: 2px solid black;
+  cursor: move;
+    padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+  left: 40%;
+  top:30%;
+   box-shadow: 5px 10px black;
+   cursor: pointer;
+     transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
 }
 
 .design {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: red;
-  color: #fff;
+/*  background-color: gray;*/
+    border: 2px solid black;
+  color: yellow;
 }
 img{
   width: 100%;
@@ -33,22 +79,53 @@ img{
 /*  margin: 4px 0 0 4px;
     box-shadow: 0 0 0 4px red;*/
 }
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+    border: 2px solid black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow; 
+    border: 2px solid black;
+}
+
+.hiddendiv{
+background: black;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+
 </style>
 <body>
 
+  <div class="hiddendiv"></div>
+
 <div id="mydiv" class="draggable">
-  <div class="design" id="mydivheader">Beach Shore</div>
-  <img src="dp_images/beach-shore.png">
+  <div class="design" id="mydivheader" tabindex="1">Beach Shore</div>
+  <img  class="img__img" src="dp_images/beach-shore.png">
 </div>
 
 <div id="mydiv01" class="draggable">
   <div class="design" id="mydiv01header">Robert Carradine django</div>
-  <img src="dp_images/robert_carradine_django.png">
+  <img  class="img__img"src="dp_images/robert_carradine_django.png">
 </div>
 
 <div id="mydiv02" class="draggable">
   <div class="design" id="mydiv02header">Khloe kardashian</div>
-  <img src="dp_images/khloe_kardashian_photo.png">
+  <img class="img__img" src="dp_images/khloe_kardashian_photo.png">
 </div>
 
 <div id="mydiv03" class="draggable">
@@ -893,15 +970,210 @@ img{
       <img class="img__img" src="dp_images/sunroom.png" />
 </div>
 
-<div id="mydiv169" class="draggable">
+<div id="mydiv169" class="draggable" class="clicker" tabindex="1">
   <div class="design">bleach eyebrow asian</div>
       <img class="img__img" src="dp_images/pretty-feet-onlyfans.png" />
 </div>
 
+<div id="mydiv170" class="draggable" class="clicker" tabindex="1">
+  <div class="design">documentary-movie-posters</div>
+      <img class="img__img" src="documentary-movie-posters" />
+</div>
 
+<div id="mydiv171" class="draggable" class="clicker" tabindex="1">
+  <div class="design">cute-bob-hairstyle</div>
+      <img class="img__img" src="cute-bob-hairstyle" />
+</div>
 
+<div id="mydiv172" class="draggable" class="clicker" tabindex="1">
+  <div class="design">deconstructed-furniture-black</div>
+      <img class="img__img" src="deconstructed-furniture-black" />
+</div>
 
+<div id="mydiv173" class="draggable" class="clicker" tabindex="1">
+  <div class="design">dakota-johnson-house-kitchen</div>
+      <img class="img__img" src="dakota-johnson-house-kitchen" />
+</div>
 
+<div id="mydiv174" class="draggable" class="clicker" tabindex="1">
+  <div class="design">urban-glam-interior-design</div>
+      <img class="img__img" src="urban-glam-interior-design" />
+</div>
+
+<div id="mydiv175" class="draggable" class="clicker" tabindex="1">
+  <div class="design">sweet-afternoon-milky-sandwich-soda-crackers</div>
+      <img class="img__img" src="sweet-afternoon-milky-sandwich-soda-crackers" />
+</div>
+
+<div id="mydiv176" class="draggable" class="clicker" tabindex="1">
+  <div class="design">kim_kardashian_short_hair</div>
+      <img class="img__img" src="kim_kardashian_short_hair" />
+</div>
+
+<div id="mydiv177" class="draggable" class="clicker" tabindex="1">
+  <div class="design">bubbly-hearts</div>
+      <img class="img__img" src="bubbly-hearts" />
+</div>
+
+<div id="mydiv178" class="draggable" class="clicker" tabindex="1">
+  <div class="design">Auvergne-France</div>
+      <img class="img__img" src="Auvergne-France" />
+</div>
+
+<div id="mydiv179" class="draggable" class="clicker" tabindex="1">
+  <div class="design">Léa-Seydoux</div>
+      <img class="img__img" src="Léa-Seydoux" />
+</div>
+
+<div id="mydiv180" class="draggable" class="clicker" tabindex="1">
+  <div class="design">André-Meyer</div>
+      <img class="img__img" src="André-Meyer" />
+</div>
+
+<div id="mydiv181" class="draggable" class="clicker" tabindex="1">
+  <div class="design">Satchel-Lee</div>
+      <img class="img__img" src="Satchel-Lee" />
+</div>
+
+<div id="mydiv182" class="draggable" class="clicker" tabindex="1">
+  <div class="design">harry-styles</div>
+      <img class="img__img" src="harry-styles" />
+</div>
+
+<div id="mydiv183" class="draggable" class="clicker" tabindex="1">
+  <div class="design">shaggy-haircut-asian</div>
+      <img class="img__img" src="shaggy-haircut-asian" />
+</div>
+
+<div id="mydiv184" class="draggable" class="clicker" tabindex="1">
+  <div class="design">jon-voight-coming-home</div>
+      <img class="img__img" src="jon-voight-coming-home" />
+</div>
+
+<div id="mydiv185" class="draggable" class="clicker" tabindex="1">
+  <div class="design">mbti-ranking</div>
+      <img class="img__img" src="mbti-ranking" />
+</div>
+
+<div id="mydiv186" class="draggable" class="clicker" tabindex="1">
+  <div class="design">marlon-brando</div>
+      <img class="img__img" src="marlon-brando" />
+</div>
+
+<div id="mydiv187" class="draggable" class="clicker" tabindex="1">
+  <div class="design">harvey-keitel</div>
+      <img class="img__img" src="harvey-keitel" />
+</div>
+
+<div id="mydiv188" class="draggable" class="clicker" tabindex="1">
+  <div class="design">amal-clooney</div>
+      <img class="img__img" src="amal-clooney" />
+</div>
+
+<div id="mydiv189" class="draggable" class="clicker" tabindex="1">
+  <div class="design">george-cloonney-young</div>
+      <img class="img__img" src="george-cloonney-young" />
+</div>
+
+<div id="mydiv190" class="draggable" class="clicker" tabindex="1">
+  <div class="design">amal-clooney-children</div>
+      <img class="img__img" src="amal-clooney-children" />
+</div>
+
+<div id="mydiv191" class="draggable" class="clicker" tabindex="1">
+  <div class="design">marlon-brando-apocalypse-now</div>
+      <img class="img__img" src="marlon-brando-apocalypse-now" />
+</div>
+
+<div id="mydiv192" class="draggable" class="clicker" tabindex="1">
+  <div class="design">wabisabi</div>
+      <img class="img__img" src="wabisabi" />
+</div>
+
+<div id="mydiv193" class="draggable" class="clicker" tabindex="1">
+  <div class="design">frank-lloyd-wright</div>
+      <img class="img__img" src="frank-lloyd-wright" />
+</div>
+
+<div id="mydiv194" class="draggable" class="clicker" tabindex="1">
+  <div class="design">charlize-theron-arrested-development</div>
+      <img class="img__img" src="charlize-theron-arrested-development" />
+</div>
+
+<div id="mydiv195" class="draggable" class="clicker" tabindex="1">
+  <div class="design">acrylic-furniture</div>
+      <img class="img__img" src="acrylic-furniture" />
+</div>
+
+<div id="mydiv196" class="draggable" class="clicker" tabindex="1">
+  <div class="design">white-resin-and-wood-table</div>
+      <img class="img__img" src="white-resin-and-wood-table" />
+</div>
+
+<div id="mydiv197" class="draggable" class="clicker" tabindex="1">
+  <div class="design">jodie-foster</div>
+      <img class="img__img" src="jodie-foster" />
+</div>
+
+<div id="mydiv198" class="draggable" class="clicker" tabindex="1">
+  <div class="design">jodie-foster-taxi-driver-oscar</div>
+      <img class="img__img" src="jodie-foster-taxi-driver-oscar" />
+</div>
+
+<div id="mydiv199" class="draggable" class="clicker" tabindex="1">
+  <div class="design">guy-holding-coffee-meme</div>
+      <img class="img__img" src="guy-holding-coffee-meme" />
+</div>
+
+<div id="mydiv200" class="draggable" class="clicker" tabindex="1">
+  <div class="design">full-metal-jacket</div>
+      <img class="img__img" src="full-metal-jacket" />
+</div>
+
+<div id="mydiv201" class="draggable" class="clicker" tabindex="1">
+  <div class="design">full-metal-jacket-helmet-writings</div>
+      <img class="img__img" src="full-metal-jacket-helmet-writings" />
+</div>
+
+<div id="mydiv202" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv203" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv204" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv205" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv206" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv207" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv208" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
+
+<div id="mydiv209" class="draggable" class="clicker" tabindex="1">
+  <div class="design">#</div>
+      <img class="img__img" src="#" />
+</div>
 <script>
 //Make the DIV element draggagle:
 var draggableElements = document.getElementsByClassName("draggable");

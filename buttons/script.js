@@ -41,3 +41,17 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function myFunction() {
+  var newWin = window.open('/', 'example', 'width=600,height=400');
+}
+
+function popitup(url) {
+04
+    newwindow=window.open(url,'name','height=600,width=750');
+05
+    if (window.focus) {newwindow.focus()}
+06
+    return false;
+07
+}
