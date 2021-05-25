@@ -13,6 +13,7 @@ body{
   text-shadow: -1px 0 #0000ff, 0 1px black, 1px 0 #ff5abd, 0 -1px black;
     font-family: 'Roboto', sans-serif;
   font-weight: 400;
+
 }
 .img__img{
   opacity: 0;
@@ -26,9 +27,9 @@ body{
 #mydiv, .draggable {
   position: absolute;
   z-index: 9;
-  background-color: white;
+  background-color: transparent;
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid transparent;
   cursor: move;
     padding: 10px;
   cursor: move;
@@ -36,7 +37,7 @@ body{
   color: #fff;
   left: 40%;
   top:30%;
-   box-shadow: 5px 10px white;
+   box-shadow: 5px 10px transparent;
    cursor: pointer;
 }
 
@@ -62,20 +63,25 @@ body{
 
 .design {
   padding: 10px;
+  padding-bottom: 1px;
   cursor: move;
   z-index: 10;
 /*  background-color: gray;*/
     border: 2px solid black;
   color: yellow;
+  background-color: white;
+
 }
+
+
 img{
   width: 100%;
   height: 240px;
   object-fit: cover;
-  flex: 33.33%;
+  flex: 30.33%;
   padding: 5px;
-  height: 300px;
-  width: 357px;
+  height: 200px;
+  width: 257px;
 /*  margin: 4px 0 0 4px;
     box-shadow: 0 0 0 4px red;*/
 }
@@ -107,1073 +113,1526 @@ background: black;
 display:block;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ff5abd;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 2px solid black;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: yellow;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-txt{
+  font-size: 2vw;
+}
+
+button{
+      background-color: transparent;
+  font-family: input-serif-condensed, serif;
+
+font-weight: 200;
+
+font-style: normal;
+  font-size: 1vw;
+  color: black;
+}
+
+button:hover{
+      text-decoration: underline;
+}
+
+.caption{
+  font-family: input-serif-condensed, serif;
+
+font-weight: 200;
+
+font-style: normal;
+  font-size: 0.4vw;
+    text-shadow: none;
+    color: black;
+
+}
 
 </style>
 <body>
+<button id="myBtn">About</button>
 
-  <div class="hiddendiv"></div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="modal-txt">Images page is dedicated to show how this bombardment of images are short lasting in our heads. The disappearing images represent how quickly we often forget what we search up while the text leaves a permanent trail in our search history. While we forget the images that we see, our computer holds the information through text</p>
+  </div>
+
+</div>
+
+
 
 <div id="mydiv" class="draggable">
-  <div class="design" id="mydivheader" tabindex="1">Beach Shore</div>
+  <div class="design" id="mydivheader" tabindex="1">Beach Shore<br><p class="caption">02-04-20, 14:21</p></div>
   <img  class="img__img" src="dp_images/beach-shore.png">
 </div>
 
 <div id="mydiv01" class="draggable">
-  <div class="design" id="mydiv01header">Robert Carradine django</div>
+  <div class="design" id="mydiv01header">Robert carradine django<br><p class="caption">02-04-20, 14:21</p></div>
   <img  class="img__img"src="dp_images/robert_carradine_django.png">
 </div>
 
 <div id="mydiv02" class="draggable">
-  <div class="design" id="mydiv02header">Khloe kardashian</div>
+  <div class="design" id="mydiv02header">Khloe kardashian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/khloe_kardashian_photo.png">
 </div>
 
 <div id="mydiv03" class="draggable">
-  <div class="design" id="mydiv03header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv03header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bleach_eyebrow_asian.png" />
 </div>
 
 <div id="mydiv04" class="draggable">
-  <div class="design" id="mydiv04header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv04header">blackhair blondeeyebrows<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/blackhair_blondeeyebrows.png" />
 </div>
 
 <div id="mydiv05" class="draggable">
-  <div class="design" id="mydiv05header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv05header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/blackhair_blondeeyebrows_02.png" />
 </div>
 
 <div id="mydiv06" class="draggable">
-  <div class="design" id="mydiv06header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv06header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <<img class="img__img" src="dp_images/blackhair_blondeeyebrows_03.png" />
 </div>
 
 <div id="mydiv07" class="draggable">
-  <div class="design" id="mydiv07header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv07header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bleach_eyebrow_asian_02.png" />
 </div>
 
 <div id="mydiv08" class="draggable">
-  <div class="design" id="mydiv08header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv08header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/jisoo_dog.png" />
 </div>
 
 <div id="mydiv09" class="draggable">
-  <div class="design" id="mydiv09header">#</div>
+  <div class="design" id="mydiv09header">#<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/jennie_blackpink_dog_white_cocker_spaniel.png" />
 </div>
 
 <div id="mydiv10" class="draggable">
-  <div class="design" id="mydiv10header">#</div>
+  <div class="design" id="mydiv10header">#<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/cancun_trip.png" />
 </div>
 
 <div id="mydiv11" class="draggable">
-  <div class="design" id="mydiv11header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv11header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bun_tom_thit_nuong_cha_gio.png" />
 </div>
 
 <div id="mydiv12" class="draggable">
-  <div class="design" id="mydiv12header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv12header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/mi_ca_tang.png" />
 </div>
 
 <div id="mydiv13" class="draggable">
-  <div class="design" id="mydiv13header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv13header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Welkeys_Paris_apartment.png" />
 </div>
 
 
 <div id="mydiv14" class="draggable">
-  <div class="design" id="mydiv14header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv14header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/russell_williams.png" />
 </div>
 
 <div id="mydiv15" class="draggable">
-  <div class="design" id="mydiv15header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv15header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Roy_Bryant.png" />
 </div>
 
 <div id="mydiv16" class="draggable">
-  <div class="design" id="mydiv16header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv16header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/overweight_labs.png" />
 </div>
 
 <div id="mydiv17" class="draggable">
-  <div class="design" id="mydiv17header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv17header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/underweight_labs.png" />
 </div>
 
 
 <div id="mydiv18" class="draggable">
-  <div class="design" id="mydiv18header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv18header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/michael_cera_signature.png" />
 </div>
 
 <div id="mydiv19" class="draggable">
-  <div class="design" id="mydiv19header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv19header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bobby_flay_mad.png" />
 </div>
 
 <div id="mydiv20" class="draggable">
-  <div class="design" id="mydiv20header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv20header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/upper_west_side_nyc.png" />
 </div>
 
 <div id="mydiv21" class="draggable">
-  <div class="design" id="mydiv21header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv21header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/michael-cera-wife.png" />
 </div>
 
 <div id="mydiv22" class="draggable">
-  <div class="design" id="mydiv22header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv22header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/gigi-goode.png" />
 </div>
 
 <div id="mydiv23" class="draggable">
-  <div class="design" id="mydiv23header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv23header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/jaida-essence-hall.png" />
 </div>
 
 
 <div id="mydiv24" class="draggable">
-  <div class="design" id="mydiv24header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv24header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/alexis-bledel.png" />
 </div>
 
 <div id="mydiv25" class="draggable">
-  <div class="design" id="mydiv25header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv25header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/cgi-closter.png" />
 </div>
 
 <div id="mydiv26" class="draggable">
-  <div class="design" id="mydiv26header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv26header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <<img class="img__img" src="dp_images/Kelly-Bishop.png" />
 </div>
 
 <div id="mydiv27" class="draggable">
-  <div class="design" id="mydiv27header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv27header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/nice-slice-figgy-stardust.png" />
 </div>
 
 
 <div id="mydiv28" class="draggable">
-  <div class="design" id="mydiv28header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv28header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/deer-hunter-christopoher-walken.png" />
 </div>
 
 <div id="mydiv29" class="draggable">
-  <div class="design" id="mydiv29header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv29header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/how-many-calories-in-lady-m-crepe-cake.png" />
 </div>
 
 <div id="mydiv30" class="draggable">
-  <div class="design" id="mydiv30header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv30header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/top-2021-bigbang.png" />
 </div>
 
 <div id="mydiv31" class="draggable">
-  <div class="design" id="mydiv31header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv31header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <<img class="img__img" src="dp_images/christopher-walken-meme.png" />
 </div>
 
 <div id="mydiv32" class="draggable">
-  <div class="design" id="mydiv32header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv32header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/katie-stout.png" />
 </div>
 
 <div id="mydiv33" class="draggable">
-  <div class="design" id="mydiv33header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv33header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/japandi.png" />
 </div>
 
 
 <div id="mydiv34" class="draggable">
-  <div class="design" id="mydiv34header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv34header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/chemin-de-fer-jeans.png" />
 </div>
 
 <div id="mydiv35" class="draggable">
-  <div class="design" id="mydiv35header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv35header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Carolyn-Bryant.png" />
 </div>
 
 <div id="mydiv36" class="draggable">
-  <div class="design" id="mydiv36header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv36header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/emmett-till-Carolyn-Bryant.png" />
 </div>
 
 <div id="mydiv37" class="draggable">
-  <div class="design" id="mydiv37header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv37header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/french-onion-soup.png" />
 </div>
 
 
 <div id="mydiv38" class="draggable">
-  <div class="design" id="mydiv38header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv38header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Wallace-Shawn-bojack-horseman.png" />
 </div>
 
 <div id="mydiv39" class="draggable">
-  <div class="design" id="mydiv39header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv39header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/lauren-graham-young.png" />
 </div>
 
 
 <div id="mydiv40" class="draggable">
-  <div class="design" id="mydiv40header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv40header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/the-princess-bride.png" />
 </div>
 
 <div id="mydiv41" class="draggable">
-  <div class="design" id="mydiv41header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv41header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Cary-Elwes.png" />
 </div>
 
 <div id="mydiv42" class="draggable">
-  <div class="design" id="mydiv42header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv42header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-2009.png" />
 </div>
 
 <div id="mydiv43" class="draggable">
-  <div class="design" id="mydiv43header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv43header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-2009-02.png" />
 </div>
 
 
 <div id="mydiv44" class="draggable">
-  <div class="design" id="mydiv44header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv44header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-2009-03.png" />
 </div>
 
 <div id="mydiv45" class="draggable">
-  <div class="design" id="mydiv45header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv45header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-2009-04.png" />
 </div>
 
 <div id="mydiv46" class="draggable">
-  <div class="design" id="mydiv46header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv46header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-2010.png" />
 </div>
 
 <div id="mydiv47" class="draggable">
-  <div class="design" id="mydiv47header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv47header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-tenet.png" />
 </div>
 
 
 <div id="mydiv48" class="draggable">
-  <div class="design" id="mydiv48header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv48header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-tenet-02.png" />
 </div>
 
 <div id="mydiv49" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/Robert-Pattinson.png" />
 </div>
 
 <div id="mydiv50" class="draggable">
-  <div class="design" id="mydiv40header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv40header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/Robert-Pattinson-02.png" />
 </div>
 
 <div id="mydiv51" class="draggable">
-  <div class="design" id="mydiv41header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv41header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/abigail-breslin.png" />
 </div>
 
 <div id="mydiv52" class="draggable">
-  <div class="design" id="mydiv42header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv42header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/steve-buscemi-king-of-staten-island.png" />
 </div>
 
 <div id="mydiv53" class="draggable">
-  <div class="design" id="mydiv43header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv43header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/steve-buscemi-movies-and-tv-shows.png" />
 </div>
 
 
 <div id="mydiv54" class="draggable">
-  <div class="design" id="mydiv44header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv44header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/cadaver.png" />
 </div>
 
 <div id="mydiv55" class="draggable">
-  <div class="design" id="mydiv45header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv45header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/one-time-cereal-use-box.png" />
 </div>
 
 <div id="mydiv56" class="draggable">
-  <div class="design" id="mydiv46header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv46header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bournemouth-to-lonndon.png" />
 </div>
 
 <div id="mydiv57" class="draggable">
-  <div class="design" id="mydiv47header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv47header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/stalk-of-broccoli.png" />
 </div>
 
 
 <div id="mydiv58" class="draggable">
-  <div class="design" id="mydiv48header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv48header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bunch-of-brocoli.png" />
 </div>
 
 <div id="mydiv59" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/how-many-calories-in-broccoli.png" />
 </div>
 
 <div id="mydiv60" class="draggable">
-  <div class="design" id="mydiv40header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv40header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/cabin-in-the-woods.png" />
 </div>
 
 <div id="mydiv61" class="draggable">
-  <div class="design" id="mydiv41header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv41header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/anne-hathaway.png" />
 </div>
 
 <div id="mydiv62" class="draggable">
-  <div class="design" id="mydiv42header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv42header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/hulk-2003.png" />
 </div>
 
 <div id="mydiv63" class="draggable">
-  <div class="design" id="mydiv43header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv43header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/edward-norton-hulk.png" />
 </div>
 
 
 <div id="mydiv64" class="draggable">
-  <div class="design" id="mydiv44header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv44header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/heaven-by-marc-jacobs.png" />
 </div>
 
 <div id="mydiv65" class="draggable">
-  <div class="design" id="mydiv45header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv45header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/linda-cardellini-green-book.png" />
 </div>
 
 <div id="mydiv66" class="draggable">
-  <div class="design" id="mydiv46header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv46header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/steak-tartare.png" />
 </div>
 
 <div id="mydiv67" class="draggable">
-  <div class="design" id="mydiv47header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv47header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/french–onion-soup-02.png" />
 </div>
 
 
 <div id="mydiv68" class="draggable">
-  <div class="design" id="mydiv48header">bleach eyebrow asian</div>
+  <div class="design" id="mydiv48header">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
   <img class="img__img" src="dp_images/bolo-ties.png" />
 </div>
 
 <div id="mydiv69" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/cute-bob-hairstyles.png" />
 </div>
 
 <div id="mydiv70" class="draggable">
-  <div class="design">#######</div>
+  <div class="design">#######<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/Keita-Machida.png" />
 </div>
 
 <div id="mydiv71" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
    <img class="img__img" src="dp_images/dori-sakurada.png" />
 </div>
 
 <div id="mydiv72" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/alice-in-borderland.png" />
 </div>
 
 <div id="mydiv73" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/tufting-gun.png" />
 </div>
 
 <div id="mydiv74" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rug-maker.png" />
 </div>
 
 <div id="mydiv75" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/double-eyelid-surgery-2-weeks-parallel.png" />
 </div>
 
 <div id="mydiv76" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/double-eyelid-korean-recovery-days.png" />
 </div>
 
 <div id="mydiv77" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/tapered-eyelid.png" />
 </div>
 
 <div id="mydiv78" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/steven-yeun-oscars.png" />
 </div>
 
 <div id="mydiv79" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/yuh-jung-youn.png" />
 </div>
 
 <div id="mydiv80" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/samosas.png" />
 </div>
 
 <div id="mydiv81" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/cody-fern-brother.png" />
 </div>
 
 <div id="mydiv82" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/cody-fern-michael-langdon.png" />
 </div>
 
 <div id="mydiv83" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/charles-burchfield.png" />
 </div>
 
 <div id="mydiv84" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/berthe-morisot.png" />
 </div>
 
 <div id="mydiv85" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/dua-lipa-2016.png" />
 </div>
 
 <div id="mydiv86" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/smeg-refrigerator.png" />
 </div>
 
 <div id="mydiv87" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/smeg-toasters.png" />
 </div>
 
 <div id="mydiv88" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/cillian-murphy -28-days.png" />
 </div>
 
 <div id="mydiv89" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/cillian-murphy-eyelashes.png" />
 </div>
 
 <div id="mydiv90" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/kendall-schmidt.png" />
 </div>
 
 <div id="mydiv91" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/piece-bong-water.png" />
 </div>
 
 <div id="mydiv92" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/1966-Czech-movie-Daisies.png" />
 </div>
 
 <div id="mydiv93" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/zac-efron-girlfriend.png" />
 </div>
 
 <div id="mydiv94" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/robert-pattinson-meme.png" />
 </div>
 
 <div id="mydiv95" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt.png" />
 </div>
 
 <div id="mydiv96" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt-02.png" />
 </div>
 
 <div id="mydiv97" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt-03.png" />
 </div>
 
 <div id="mydiv98" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/olivia-rodrigo.png" />
 </div>
 
 <div id="mydiv99" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rina-sawayama.png" />
 </div>
 
 <div id="mydiv100" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/avril-lavigne.png" />
 </div>
 
 <div id="mydiv101" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/pocahontas-movie.png" />
 </div>
 
 <div id="mydiv102" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/judy-kuhn.png" />
 </div>
 
 <div id="mydiv103" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/frozen 2.png" />
 </div>
 
 <div id="mydiv104" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/phil-collins.png" />
 </div>
 
 <div id="mydiv105" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/josh-bassett.png" />
 </div>
 
 <div id="mydiv106" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/van-halen.png" />
 </div>
 
 <div id="mydiv107" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/sleeping-with-mouth-open-face-deformation.png" />
 </div>
 
 <div id="mydiv108" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/mewing-before-and-after.png" />
 </div>
 
 <div id="mydiv109" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/erbnie-sanders-meme.png" />
 </div>
 
 <div id="mydiv110" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/reddit-election-memes-cloud.png" />
 </div>
 
 <div id="mydiv111" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/soft-tofu-recipes.png" />
 </div>
 
 <div id="mydiv112" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/keanu-reeves-young.png" />
 </div>
 
 <div id="mydiv113" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/keanu-reeves-sad.png" />
 </div>
 
 <div id="mydiv114" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/keanu-reeves.png" />
 </div>
 
 <div id="mydiv115" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/ben-affleck-sad.png" />
 </div>
 
 <div id="mydiv116" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/ben-affleck.png" />
 </div>
 
 <div id="mydiv117" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/adam-driver.png" />
 </div>
 
 <div id="mydiv118" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/jonas-brothers-burning.png" />
 </div>
 
 <div id="mydiv119" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/Bill-Skarsgård.png" />
 </div>
 
 <div id="mydiv120" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/mads-mikkelsen-young.png" />
 </div>
 
 <div id="mydiv121" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/mads-mikkelsen.png" />
 </div>
 
 <div id="mydiv122" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt-05.png" />
 </div>
 
 <div id="mydiv123" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt_04.png" />
 </div>
 
 <div id="mydiv124" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/Heath-Ledger.png" />
 </div>
 
 <div id="mydiv125" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/jake-gyllenhaal.png" />
 </div>
 
 <div id="mydiv126" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/Tom-Hardy-young.png" />
 </div>
 
 <div id="mydiv127" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/benedict-cumberbatch.png" />
 </div>
 
 <div id="mydiv128" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/Tom-Hardy.png" />
 </div>
 
 <div id="mydiv129" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/cillian-murphy-young.png" />
 </div>
 
 <div id="mydiv130" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/cillian-murphy.png" />
 </div>
 
 <div id="mydiv131" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/theon-jojo-rabbit.png" />
 </div>
 
 <div id="mydiv132" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/jesse-plemons-breaking-bad.png" />
 </div>
 
 <div id="mydiv133" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/jesse-plemons-game-night.png" />
 </div>
 
 <div id="mydiv134" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/a-ha.png" />
 </div>
 
 <div id="mydiv135" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/minju-kim-next-in-fashion-finale.png" />
 </div>
 
 <div id="mydiv136" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/next-in-fashion-winner.png" />
 </div>
 
 <div id="mydiv137" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/iu-tracksuit.png" />
 </div>
 
 <div id="mydiv138" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/anatra-ravioli.png" />
 </div>
 
 <div id="mydiv139" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/duck-confit.png" />
 </div>
 
 <div id="mydiv140" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/sasuke.png" />
 </div>
 
 <div id="mydiv141" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/infp-characters.png" />
 </div>
 
 <div id="mydiv142" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/infp.png" />
 </div>
 
 <div id="mydiv143" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/Vampire-Academy.png" />
 </div>
 
 <div id="mydiv144" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
 <img class="img__img" src="dp_images/fish-tofu-cake-recipes.png" /></div>
 
 <div id="mydiv145" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/seventeen.png" />
 </div>
 
 <div id="mydiv146" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/dk-nose-seventeen.png" />
 </div>
 
 <div id="mydiv147" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/ikon.png" />
 </div>
 
 <div id="mydiv148" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/block-b.png" />
 </div>
 
 <div id="mydiv149" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/wonwoo.png" />
 </div>
 
 <div id="mydiv150" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/seventeen-knowing-bros.png" />
 </div>
 
 <div id="mydiv151" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/seventeen-mingyu.png" />
 </div>
 
 <div id="mydiv152" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/diebenkorn.png" />
 </div>
 
 <div id="mydiv153" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/kline-art.png" />
 </div>
 
 <div id="mydiv154" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/omakase.png" />
 </div>
 
 <div id="mydiv155" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/spring-rolls.png" />
 </div>
 
 <div id="mydiv156" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/jared-padalecki-gilmore-girls.png" />
 </div>
 
 <div id="mydiv157" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/jared-padalecki.png" />
 </div>
 
 <div id="mydiv158" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/beach-shore.png" />
 </div>
 
 <div id="mydiv159" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt_07.png" />
 </div>
 
 <div id="mydiv160" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt_08.png" />
 </div>
 
 <div id="mydiv161" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/rpatt_06.png" />
 </div>
 
 <div id="mydiv162" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/internet-addiction-images.png" />
 </div>
 
 <div id="mydiv163" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/lin-family-murders.png" />
 </div>
 
 <div id="mydiv164" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/playful-kiss-drama.png" />
 </div>
 
 <div id="mydiv165" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/red-velvet.png" />
 </div>
 
 <div id="mydiv166" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/australian-labradoodle.png" />
 </div>
 
 <div id="mydiv167" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/risd-dorms.png" />
 </div>
 
 <div id="mydiv168" class="draggable">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/sunroom.png" />
 </div>
 
 <div id="mydiv169" class="draggable" class="clicker" tabindex="1">
-  <div class="design">bleach eyebrow asian</div>
+  <div class="design">bleach eyebrow asian<br><p class="caption">02-04-20, 14:21</p></div>
       <img class="img__img" src="dp_images/pretty-feet-onlyfans.png" />
 </div>
 
 <div id="mydiv170" class="draggable" class="clicker" tabindex="1">
-  <div class="design">documentary-movie-posters</div>
-      <img class="img__img" src="documentary-movie-posters" />
+  <div class="design">documentary-movie-posters<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/documentary-movie-posters.png" />
 </div>
 
 <div id="mydiv171" class="draggable" class="clicker" tabindex="1">
-  <div class="design">cute-bob-hairstyle</div>
-      <img class="img__img" src="cute-bob-hairstyle" />
+  <div class="design">cute-bob-hairstyle<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/cute-bob-hairstyle.png" />
 </div>
 
 <div id="mydiv172" class="draggable" class="clicker" tabindex="1">
-  <div class="design">deconstructed-furniture-black</div>
-      <img class="img__img" src="deconstructed-furniture-black" />
+  <div class="design">deconstructed-furniture-black<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/deconstructed-furniture-black.png" />
 </div>
 
 <div id="mydiv173" class="draggable" class="clicker" tabindex="1">
-  <div class="design">dakota-johnson-house-kitchen</div>
-      <img class="img__img" src="dakota-johnson-house-kitchen" />
+  <div class="design">dakota-johnson-house-kitchen<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/dakota-johnson-house-kitchen.png" />
 </div>
 
 <div id="mydiv174" class="draggable" class="clicker" tabindex="1">
-  <div class="design">urban-glam-interior-design</div>
-      <img class="img__img" src="urban-glam-interior-design" />
+  <div class="design">urban-glam-interior-design<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/urban-glam-interior-design.png" />
 </div>
 
 <div id="mydiv175" class="draggable" class="clicker" tabindex="1">
-  <div class="design">sweet-afternoon-milky-sandwich-soda-crackers</div>
-      <img class="img__img" src="sweet-afternoon-milky-sandwich-soda-crackers" />
+  <div class="design">sweet-afternoon-milky-sandwich-soda-crackers<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/sweet-afternoon-milky-sandwich-soda-crackers.png" />
 </div>
 
 <div id="mydiv176" class="draggable" class="clicker" tabindex="1">
-  <div class="design">kim_kardashian_short_hair</div>
-      <img class="img__img" src="kim_kardashian_short_hair" />
+  <div class="design">kim_kardashian_short_hair<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/kim_kardashian_short_hair.png" />
 </div>
 
 <div id="mydiv177" class="draggable" class="clicker" tabindex="1">
-  <div class="design">bubbly-hearts</div>
-      <img class="img__img" src="bubbly-hearts" />
+  <div class="design">bubbly-hearts<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/bubbly-hearts.png" />
 </div>
 
 <div id="mydiv178" class="draggable" class="clicker" tabindex="1">
-  <div class="design">Auvergne-France</div>
-      <img class="img__img" src="Auvergne-France" />
+  <div class="design">Auvergne-France<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/Auvergne-France.png" />
 </div>
 
 <div id="mydiv179" class="draggable" class="clicker" tabindex="1">
-  <div class="design">Léa-Seydoux</div>
-      <img class="img__img" src="Léa-Seydoux" />
+  <div class="design">Léa-Seydoux<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/Léa-Seydoux.png" />
 </div>
 
 <div id="mydiv180" class="draggable" class="clicker" tabindex="1">
-  <div class="design">André-Meyer</div>
-      <img class="img__img" src="André-Meyer" />
+  <div class="design">André-Meyer<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/André-Meyer.png" />
 </div>
 
 <div id="mydiv181" class="draggable" class="clicker" tabindex="1">
-  <div class="design">Satchel-Lee</div>
-      <img class="img__img" src="Satchel-Lee" />
+  <div class="design">Satchel-Lee<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/Satchel-Lee.png" />
 </div>
 
 <div id="mydiv182" class="draggable" class="clicker" tabindex="1">
-  <div class="design">harry-styles</div>
-      <img class="img__img" src="harry-styles" />
+  <div class="design">harry-styles<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/harry-styles.png" />
 </div>
 
 <div id="mydiv183" class="draggable" class="clicker" tabindex="1">
-  <div class="design">shaggy-haircut-asian</div>
-      <img class="img__img" src="shaggy-haircut-asian" />
+  <div class="design">shaggy-haircut-asian<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/shaggy-haircut-asian.png" />
 </div>
 
 <div id="mydiv184" class="draggable" class="clicker" tabindex="1">
-  <div class="design">jon-voight-coming-home</div>
-      <img class="img__img" src="jon-voight-coming-home" />
+  <div class="design">jon-voight-coming-home<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/jon-voight-coming-home.png" />
 </div>
 
 <div id="mydiv185" class="draggable" class="clicker" tabindex="1">
-  <div class="design">mbti-ranking</div>
-      <img class="img__img" src="mbti-ranking" />
+  <div class="design">mbti-ranking<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/mbti-ranking.png" />
 </div>
 
 <div id="mydiv186" class="draggable" class="clicker" tabindex="1">
-  <div class="design">marlon-brando</div>
-      <img class="img__img" src="marlon-brando" />
+  <div class="design">marlon-brando<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/marlon-brando.png" />
 </div>
 
 <div id="mydiv187" class="draggable" class="clicker" tabindex="1">
-  <div class="design">harvey-keitel</div>
-      <img class="img__img" src="harvey-keitel" />
+  <div class="design">harvey-keitel<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/harvey-keitel.png" />
 </div>
 
 <div id="mydiv188" class="draggable" class="clicker" tabindex="1">
-  <div class="design">amal-clooney</div>
-      <img class="img__img" src="amal-clooney" />
+  <div class="design">amal-clooney<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/amal-clooney.png" />
 </div>
 
 <div id="mydiv189" class="draggable" class="clicker" tabindex="1">
-  <div class="design">george-cloonney-young</div>
-      <img class="img__img" src="george-cloonney-young" />
+  <div class="design">george-cloonney-young<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/george-cloonney-young.png" />
 </div>
 
 <div id="mydiv190" class="draggable" class="clicker" tabindex="1">
-  <div class="design">amal-clooney-children</div>
-      <img class="img__img" src="amal-clooney-children" />
+  <div class="design">amal-clooney-children<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/amal-clooney-children.png" />
 </div>
 
 <div id="mydiv191" class="draggable" class="clicker" tabindex="1">
-  <div class="design">marlon-brando-apocalypse-now</div>
-      <img class="img__img" src="marlon-brando-apocalypse-now" />
+  <div class="design">marlon-brando-apocalypse-now<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/marlon-brando-apocalypse-now.png" />
 </div>
 
 <div id="mydiv192" class="draggable" class="clicker" tabindex="1">
-  <div class="design">wabisabi</div>
-      <img class="img__img" src="wabisabi" />
+  <div class="design">wabisabi<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/wabisabi.png" />
 </div>
 
 <div id="mydiv193" class="draggable" class="clicker" tabindex="1">
-  <div class="design">frank-lloyd-wright</div>
-      <img class="img__img" src="frank-lloyd-wright" />
+  <div class="design">frank-lloyd-wright<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/frank-lloyd-wright.png" />
 </div>
 
 <div id="mydiv194" class="draggable" class="clicker" tabindex="1">
-  <div class="design">charlize-theron-arrested-development</div>
-      <img class="img__img" src="charlize-theron-arrested-development" />
+  <div class="design">charlize-theron-arrested-development<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/charlize-theron-arrested-development.png" />
 </div>
 
 <div id="mydiv195" class="draggable" class="clicker" tabindex="1">
-  <div class="design">acrylic-furniture</div>
-      <img class="img__img" src="acrylic-furniture" />
+  <div class="design">acrylic-furniture<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/acrylic-furniture.png" />
 </div>
 
 <div id="mydiv196" class="draggable" class="clicker" tabindex="1">
-  <div class="design">white-resin-and-wood-table</div>
-      <img class="img__img" src="white-resin-and-wood-table" />
+  <div class="design">white-resin-and-wood-table<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/white-resin-and-wood-table.png" />
 </div>
 
 <div id="mydiv197" class="draggable" class="clicker" tabindex="1">
-  <div class="design">jodie-foster</div>
-      <img class="img__img" src="jodie-foster" />
+  <div class="design">jodie-foster<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/jodie-foster.png" />
 </div>
 
 <div id="mydiv198" class="draggable" class="clicker" tabindex="1">
-  <div class="design">jodie-foster-taxi-driver-oscar</div>
-      <img class="img__img" src="jodie-foster-taxi-driver-oscar" />
+  <div class="design">jodie-foster-taxi-driver-oscar<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/jodie-foster-taxi-driver-oscar.png" />
 </div>
 
 <div id="mydiv199" class="draggable" class="clicker" tabindex="1">
-  <div class="design">guy-holding-coffee-meme</div>
-      <img class="img__img" src="guy-holding-coffee-meme" />
+  <div class="design">guy-holding-coffee-meme<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/guy-holding-coffee-meme.png" />
 </div>
 
 <div id="mydiv200" class="draggable" class="clicker" tabindex="1">
-  <div class="design">full-metal-jacket</div>
-      <img class="img__img" src="full-metal-jacket" />
+  <div class="design">full-metal-jacket<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/full-metal-jacket.png" />
 </div>
 
 <div id="mydiv201" class="draggable" class="clicker" tabindex="1">
-  <div class="design">full-metal-jacket-helmet-writings</div>
-      <img class="img__img" src="full-metal-jacket-helmet-writings" />
+  <div class="design">full-metal-jacket-helmet-writings<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/full-metal-jacket-helmet-writings.png" />
 </div>
 
 <div id="mydiv202" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">beetle-gold-pin<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/beetle-gold-pin.png" />
 </div>
 
 <div id="mydiv203" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">wes-anderson-films-set-design<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/wes-anderson-films-set-design.png" />
 </div>
 
 <div id="mydiv204" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">wes-anderson-films-clothing<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/wes-anderson-films-clothing.png" />
 </div>
 
 <div id="mydiv205" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">capitol-riots<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/capitol-riots.png" />
 </div>
 
 <div id="mydiv206" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">cool-animal-tags<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/cool-animal-tags.png" />
 </div>
 
 <div id="mydiv207" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">johnny-depp-platoon<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/johnny-depp-platoon.png" />
 </div>
 
 <div id="mydiv208" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">marine-serre<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/marine-serre.png" />
 </div>
 
 <div id="mydiv209" class="draggable" class="clicker" tabindex="1">
-  <div class="design">#</div>
-      <img class="img__img" src="#" />
+  <div class="design">3d-printed-chains-fashion<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/3d-printed-chains-fashion.png" />
 </div>
+
+<div id="mydiv210" class="draggable" class="clicker" tabindex="1">
+  <div class="design">colin-locascio<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/colin-locascio.png" />
+</div>
+
+<div id="mydiv211" class="draggable" class="clicker" tabindex="1">
+  <div class="design">decorative-3d-print-fashion-streetwear<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/decorative-3d-print-fashion-streetwear.png" />
+</div>
+
+<div id="mydiv212" class="draggable" class="clicker" tabindex="1">
+  <div class="design">decorative-clothing-pins<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/decorative-clothing-pins.png" />
+</div>
+
+<div id="mydiv213" class="draggable" class="clicker" tabindex="1">
+  <div class="design">capitol-building<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/capitol-building.png" />
+</div>
+
+<div id="mydiv214" class="draggable" class="clicker" tabindex="1">
+  <div class="design">blm-protests<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/blm-protests.png" />
+</div>
+
+<div id="mydiv215" class="draggable" class="clicker" tabindex="1">
+  <div class="design">blm<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/blm.png" />
+</div>
+
+<div id="mydiv216" class="draggable" class="clicker" tabindex="1">
+  <div class="design">blm_02<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/blm_02.png" />
+</div>
+
+<div id="mydiv217" class="draggable" class="clicker" tabindex="1">
+  <div class="design">chauvin<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/chauvin.png" />
+</div>
+
+<div id="mydiv218" class="draggable" class="clicker" tabindex="1">
+  <div class="design">george-floyd<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/george-floyd.png" />
+</div>
+
+<div id="mydiv219" class="draggable" class="clicker" tabindex="1">
+  <div class="design">apocalypse-now<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/apocalypse-now.png" />
+</div>
+
+<div id="mydiv220" class="draggable" class="clicker" tabindex="1">
+  <div class="design">john-wayne<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/john-wayne.png" />
+</div>
+
+<div id="mydiv221" class="draggable" class="clicker" tabindex="1">
+  <div class="design">lincoln-project-the-hoax<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/lincoln-project-the-hoax.png" />
+</div>
+
+<div id="mydiv222" class="draggable" class="clicker" tabindex="1">
+  <div class="design">lewis-capaldi<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/lewis-capaldi.png" />
+</div>
+
+<div id="mydiv223" class="draggable" class="clicker" tabindex="1">
+  <div class="design">indoor-house<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/indoor-house.png" />
+</div>
+
+<div id="mydiv224" class="draggable" class="clicker" tabindex="1">
+  <div class="design">bedroom-decor-blue<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/bedroom-decor-blue.png" />
+</div>
+
+<div id="mydiv225" class="draggable" class="clicker" tabindex="1">
+  <div class="design">snowboard-helmet<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/snowboard-helmet.png" />
+</div>
+
+<div id="mydiv226" class="draggable" class="clicker" tabindex="1">
+  <div class="design">audi-sedan<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/audi-sedan.png" />
+</div>
+
+<div id="mydiv227" class="draggable" class="clicker" tabindex="1">
+  <div class="design">tesla-truck<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/tesla-truck.png" />
+</div>
+
+<div id="mydiv230" class="draggable" class="clicker" tabindex="1">
+  <div class="design">tesla-model-y<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/tesla-model-y.png" />
+</div>
+
+<div id="mydiv231" class="draggable" class="clicker" tabindex="1">
+  <div class="design">slot-las-vegas-jackpot<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/slot-las-vegas-jackpot.png" />
+</div>
+
+<div id="mydiv232" class="draggable" class="clicker" tabindex="1">
+  <div class="design">led-light-arrow-las-vegas<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/led-light-arrow-las-vegas.png" />
+</div>
+
+<div id="mydiv233" class="draggable" class="clicker" tabindex="1">
+  <div class="design">gold-flake-nails<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/gold-flake-nails.png" />
+</div>
+
+<div id="mydiv234" class="draggable" class="clicker" tabindex="1">
+  <div class="design">velvet-nails<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/velvet-nails.png" />
+</div>
+
+<div id="mydiv235" class="draggable" class="clicker" tabindex="1">
+  <div class="design">jack-the-ripper<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/jack-the-ripper.png" />
+</div>
+
+<div id="mydiv236" class="draggable" class="clicker" tabindex="1">
+  <div class="design">jacquemus-keychain<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/jacquemus-keychain.png" />
+</div>
+
+<div id="mydiv237" class="draggable" class="clicker" tabindex="1">
+  <div class="design">large-capacity-fanny-pack<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/large-capacity-fanny-pack.png" />
+</div>
+
+<div id="mydiv238" class="draggable" class="clicker" tabindex="1">
+  <div class="design">samsung-watch-bands<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/samsung-watch-bands.png" />
+</div>
+
+<div id="mydiv239" class="draggable" class="clicker" tabindex="1">
+  <div class="design">vanessa-kirby-movies-and-tv-shows<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/vanessa-kirby-movies-and-tv-shows.png" />
+</div>
+
+<div id="mydiv240" class="draggable" class="clicker" tabindex="1">
+  <div class="design">the-crown-cast-margaret<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/the-crown-cast-margaret.png" />
+</div>
+
+<div id="mydiv241" class="draggable" class="clicker" tabindex="1">
+  <div class="design">the-crown-cast<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/the-crown-cast.png" />
+</div>
+
+<div id="mydiv242" class="draggable" class="clicker" tabindex="1">
+  <div class="design">nick-viall-bachelor-runner-up<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/nick-viall-bachelor-runner-up.png" />
+</div>
+
+<div id="mydiv243" class="draggable" class="clicker" tabindex="1">
+  <div class="design">peter-giannikopoulos<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/peter-giannikopoulos.png" />
+</div>
+
+<div id="mydiv244" class="draggable" class="clicker" tabindex="1">
+  <div class="design">biceps<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/biceps.png" />
+</div>
+
+<div id="mydiv245" class="draggable" class="clicker" tabindex="1">
+  <div class="design">double staircase house-interior-modern-transitional<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/double staircase house-interior-modern-transitional.png" />
+</div>
+
+<div id="mydiv246" class="draggable" class="clicker" tabindex="1">
+  <div class="design">double-staircase-house-interior-modern<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/double-staircase-house-interior-modern.png" />
+</div>
+
+<div id="mydiv247" class="draggable" class="clicker" tabindex="1">
+  <div class="design">python<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/python.png" />
+</div>
+
+<div id="mydiv248" class="draggable" class="clicker" tabindex="1">
+  <div class="design">jane-doe<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/jane-doe.png" />
+</div>
+
+<div id="mydiv249" class="draggable" class="clicker" tabindex="1">
+  <div class="design">maximalist-house<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/maximalist-house.png" />
+</div>
+
+<div id="mydiv250" class="draggable" class="clicker" tabindex="1">
+  <div class="design">self-playing-toys-for-dogs<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/self-playing-toys-for-dogs.png" />
+</div>
+
+<div id="mydiv251" class="draggable" class="clicker" tabindex="1">
+  <div class="design">woody's-nightmare<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/woody's-nightmare.png" />
+</div>
+
+<div id="mydiv252" class="draggable" class="clicker" tabindex="1">
+  <div class="design">coex-dancing-monster<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/coex-dancing-monster.png" />
+</div>
+
+<div id="mydiv253" class="draggable" class="clicker" tabindex="1">
+  <div class="design">danny-devito<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/danny-devito.png" />
+</div>
+
+<div id="mydiv254" class="draggable" class="clicker" tabindex="1">
+  <div class="design">ear-lobe-piercing-infection-bump<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/ear-lobe-piercing-infection-bump.png" />
+</div>
+
+<div id="mydiv255" class="draggable" class="clicker" tabindex="1">
+  <div class="design">ed-hardy<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/ed-hardy.png" />
+</div>
+
+<div id="mydiv256" class="draggable" class="clicker" tabindex="1">
+  <div class="design">bvlgari-goldea-the-roman-night<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/bvlgari-goldea-the-roman-night.png" />
+</div>
+
+<div id="mydiv257" class="draggable" class="clicker" tabindex="1">
+  <div class="design">pleats-bag<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/pleats-bag.png" />
+</div>
+
+<div id="mydiv258" class="draggable" class="clicker" tabindex="1">
+  <div class="design">lotte-mall-pleats-bag<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/lotte-mall-pleats-bag.png" />
+</div>
+
+<div id="mydiv259" class="draggable" class="clicker" tabindex="1">
+  <div class="design">golden-face-ratio-test<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/golden-face-ratio-test.png" />
+</div>
+
+<div id="mydiv260" class="draggable" class="clicker" tabindex="1">
+  <div class="design">eyebrow-lift-botox-korea<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/eyebrow-lift-botox-korea.png" />
+</div>
+
+<div id="mydiv261" class="draggable" class="clicker" tabindex="1">
+  <div class="design">nose-fillers-after-1-year-reddit<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/nose-fillers-after-1-year-reddit.png" />
+</div>
+
+<div id="mydiv262" class="draggable" class="clicker" tabindex="1">
+  <div class="design">Julianne-Phillips<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/Julianne-Phillips.png" />
+</div>
+
+<div id="mydiv263" class="draggable" class="clicker" tabindex="1">
+  <div class="design">asus-computer<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/asus-computer.png" />
+</div>
+
+<div id="mydiv264" class="draggable" class="clicker" tabindex="1">
+  <div class="design">keith-haring-dog<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/keith-haring-dog.png" />
+</div>
+
+<div id="mydiv265" class="draggable" class="clicker" tabindex="1">
+  <div class="design">pastiche-art<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/pastiche-art.png" />
+</div>
+
+<div id="mydiv266" class="draggable" class="clicker" tabindex="1">
+  <div class="design">hair-waver-no-heat<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/hair-waver-no-heat.png" />
+</div>
+
+<div id="mydiv267" class="draggable" class="clicker" tabindex="1">
+  <div class="design">chapstick-box-packaging<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/chapstick-box-packaging.png" />
+</div>
+
+<div id="mydiv268" class="draggable" class="clicker" tabindex="1">
+  <div class="design">mad-creps<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/mad-creps.png" />
+</div>
+
+<div id="mydiv269" class="draggable" class="clicker" tabindex="1">
+  <div class="design">sugar-chapstick<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/sugar-chapstick.png" />
+</div>
+
+<div id="mydiv270" class="draggable" class="clicker" tabindex="1">
+  <div class="design">noiago<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/noiago.png" />
+</div>
+
+<div id="mydiv271" class="draggable" class="clicker" tabindex="1">
+  <div class="design">running-animation-frames<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/running-animation-frames.png" />
+</div>
+
+<div id="mydiv272" class="draggable" class="clicker" tabindex="1">
+  <div class="design">running-motion<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/running-motion.png" />
+</div>
+
+<div id="mydiv273" class="draggable" class="clicker" tabindex="1">
+  <div class="design">tommy-mottola<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/tommy-mottola.png" />
+</div>
+
+<div id="mydiv274" class="draggable" class="clicker" tabindex="1">
+  <div class="design">structuralism<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/structuralism.png" />
+</div>
+
+<div id="mydiv275" class="draggable" class="clicker" tabindex="1">
+  <div class="design">structuralism-strauss<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/structuralism-strauss.png" />
+</div>
+
+<div id="mydiv276" class="draggable" class="clicker" tabindex="1">
+  <div class="design">kitchen-sink<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/kitchen-sink.png" />
+</div>
+
+<div id="mydiv277" class="draggable" class="clicker" tabindex="1">
+  <div class="design">nike-reactland<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/nike-reactland.png" />
+</div>
+
+<div id="mydiv278" class="draggable" class="clicker" tabindex="1">
+  <div class="design">the-row-usc<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/the-row-usc.png" />
+</div>
+
+<div id="mydiv279" class="draggable" class="clicker" tabindex="1">
+  <div class="design">korean-keyboard<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/korean-keyboard.png" />
+</div>
+
+<div id="mydiv280" class="draggable" class="clicker" tabindex="1">
+  <div class="design">salad<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/salad.png" />
+</div>
+
+<div id="mydiv281" class="draggable" class="clicker" tabindex="1">
+  <div class="design">lomein-thin-noodles<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/lomein-thin-noodles.png" />
+</div>
+
+<div id="mydiv282" class="draggable" class="clicker" tabindex="1">
+  <div class="design">lomein<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/lomein.png" />
+</div>
+
+<div id="mydiv283" class="draggable" class="clicker" tabindex="1">
+  <div class="design">popular-culture-definition<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/popular-culture-definition.png" />
+</div>
+
+<div id="mydiv284" class="draggable" class="clicker" tabindex="1">
+  <div class="design">south-korea-hostage<br><p class="caption">02-04-20, 14:21</p></div>
+      <img class="img__img" src="dp_images/south-korea-hostage.png" />
+</div>
+
+<div id="mydiv285" class="draggable" class="clicker" tabindex="1">
+  <div class="design">side profile<br><p class="caption">02-04-20, 14:21</p></div>
+    
+      <img class="img__img" src="dp_images/side-profile.png" />
+</div>
+
+
+
 <script>
 //Make the DIV element draggagle:
 var draggableElements = document.getElementsByClassName("draggable");
@@ -1212,6 +1671,32 @@ function dragElement(elmnt) {
         document.onmouseup = null;
         document.onmousemove = null;
     }
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 </script>
 

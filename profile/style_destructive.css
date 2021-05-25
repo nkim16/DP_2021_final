@@ -1,0 +1,47 @@
+body {
+  margin: 1em;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 4em;
+  color: blue;
+  background: white;
+    text-align: center;
+
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+  text-align: center;
+}
+
+button{
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  outline: none;
+  transition-duration: 0.4s;
+}
+
+button:hover{
+  background-color: red; /* Green */
+  color: white;
+}
+p{
+	font-size: 0.3em;
+	text-align: center;
+}
+
+.title{
+	position: relative;
+}
+.list{
+	position: relative;
+}
+.tagline{
+	position: absolute;
+	top:70%;
+	left:42%;
+}

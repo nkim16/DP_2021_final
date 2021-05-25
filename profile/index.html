@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Machine</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/rko6bul.css">
+
+    <script src="script.js" defer></script>
+  </head>  
+
+  <body> 
+  <div class="about">
+    <a href="about.html"><button id="about_button" class="about_button" class="about-txt" type="button" onclick="displayabout()" value="About">
+      <h1 class="about-txt">About</h1>
+    </button></a>
+  </div>
+
+   <div class="main">
+    <a href="index.html"><button id="about_button" class="main_button" class="about-txt" >
+      <h1 class="about-txt">Home</h1>
+    </button></a>
+  </div>
+
+  <div class="quiz_result" id="quiz-result">
+  </div>
+  <div class="about_section" id="about_section" style="display:none;">
+    hello
+  </div>
+
+  <div class="field"> 
+   <label for="options"><h1 class="main-sent">I want to <i>seem</i>...</h1></label>
+    <button value="whole" id="whole" type="button" class="whole-txt">
+      Wholesome
+    </button>
+
+    <button value="dest" id="dest" type="button" class="dest-txt">
+      Destructive
+    </button>
+    <button value="stu" id="stu" class="stu-txt">
+      Stupid
+    </button>
+    <button value="cur" id="cur" class="cur-txt">
+      Curious
+    </button>
+    <button value="bor" id="bor" class="bor-txt">
+      Boring
+    </button>
+    <button value="sm" id="sm" class="sm-txt">
+      Smart
+    </button>
+</div>
+
+<div class=txt>
+
+</div>
+<section class="option-detail" id="result-section">
+    <div class="list">
+      <h1 class="txt-box" id="result"><img class="search_icon"src="search_icon.png"></h1>
+    </div>
+      <div>
+        <p id="tagline-whole" class="tagline"></p>
+      </div>
+ </section>
+
+ <div id="submit" class="info" >
+        <button value="info" id="submit" class="info" type="button">
+      <h1 class="profile">Profile</h1>
+ </div>
+
+</body>
+</html>

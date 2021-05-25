@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Google</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script async src="https://cse.google.com/cse.js?cx=123:456"></script>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -13,7 +14,6 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <head>
-    <title>Google</title>
     <style>
     [ng\:cloak], [ng-cloak], .ng-cloak {
       display: none;
@@ -363,10 +363,13 @@ footer {
 
 
 h4{
-  color: red;
+  color: white;
   font-size: 1vw;
   position: relative;
   display: inline-block;
+    text-shadow: -1px 0 #0000ff, 0 1px black, 1px 0 #ff5abd, 0 -1px black;
+    font-family: input-serif-condensed, serif;
+    font-weight: 200;
 
 }
 footer a:link,
@@ -450,6 +453,7 @@ letter-spacing: 20px;
 .reading{
   font-size: 1vw;
   color: red;
+  width: 100vw;
 }
 
 .info{
@@ -512,6 +516,7 @@ letter-spacing: 20px;
           <h1 class="google"><span id="blue">G</span><span id="red">o</span><span id="yellow">o</span><span id="blue">g</span><span id="green">l</span><span id="red">e</span></h1>
 
 <script type="text/javascript">
+
     var urls = [
         'http://heeeeeeeey.com/',
         'http://eelslap.com/',
@@ -547,9 +552,11 @@ letter-spacing: 20px;
         'http://www.drivemeinsane.com/'
     ];
 
+
     function goSomewhere() {
         var url = urls[Math.floor(Math.random()*urls.length)];
         window.location = url; // redirect
+
 
     }
 
@@ -606,9 +613,155 @@ letter-spacing: 20px;
                 <br> <a href='https://www.politico.com/news/2021/05/12/ohio-vaccinated-adults-lottery-drawing-487726' span id="keywords">Ohio offers vaccinated a chance to win big bucks </a>
                 <br> <a href='https://support.apple.com/en-us/HT212227' span id="keywords">Apple Tag Got Lost</a> <span id="hot">hot!</span></p></div>
           </div>
-  <div style=" position:absolute; z-index:-10; top:-20%; text-align: left; left: -60%;">
+  <div style=" position:absolute; left: -60%; z-index:-10; top:-20%; text-align: center; width: 100vw; overflow-x: hidden;">
           <div class="reading">
       <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+      <h4><!-- Key Pressed : --> {{kdKey}}</h4>
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+      <h4><!-- Key Pressed :  -->{{kdKey}}</h4>
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+      <h4><!-- Key Pressed :  -->{{kdKey}}</h4>
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+</div>
+
+ <div class="reading">
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
         <h4><!-- Change Events : --> {{change}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
            <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
@@ -660,20 +813,15 @@ letter-spacing: 20px;
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
 
            <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
-</div>
- <div class="reading">
-      <h4><!-- Blur Events : --> {{blur}}</h4>
-      <h4><!-- Click Events : --> {{click}}</h4>
-      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
-      <h4><!-- Copy Events : --> {{copy}}</h4>
-      <h4><!-- Paste Events : --> {{paste}}</h4>
-      <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
@@ -692,6 +840,94 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+                  <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+            <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
@@ -711,6 +947,94 @@ letter-spacing: 20px;
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+            <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
 
       <!-- There is also keypress and keyup -->
@@ -732,6 +1056,9 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
@@ -750,6 +1077,9 @@ letter-spacing: 20px;
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
@@ -769,6 +1099,58 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
@@ -777,6 +1159,9 @@ letter-spacing: 20px;
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
 
       <!-- There is also keypress and keyup -->
@@ -794,6 +1179,9 @@ letter-spacing: 20px;
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
@@ -813,8 +1201,63 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
@@ -831,10 +1274,30 @@ letter-spacing: 20px;
 </div>
 <div class="reading">
       <h4><!-- Blur Events : --> {{blur}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
@@ -856,6 +1319,95 @@ letter-spacing: 20px;
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+                  <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
@@ -875,6 +1427,9 @@ letter-spacing: 20px;
  <div class="reading">
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
@@ -885,7 +1440,110 @@ letter-spacing: 20px;
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
 
       <!-- There is also keypress and keyup -->
@@ -897,6 +1555,9 @@ letter-spacing: 20px;
 </div>
  <div class="reading">
       <h4><!-- Blur Events : --> {{blur}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
@@ -905,6 +1566,23 @@ letter-spacing: 20px;
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
@@ -926,6 +1604,9 @@ letter-spacing: 20px;
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
@@ -946,15 +1627,104 @@ letter-spacing: 20px;
 </div>
  <div class="reading">
       <h4><!-- Blur Events : --> {{blur}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+    <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
@@ -972,6 +1742,9 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
@@ -989,6 +1762,95 @@ letter-spacing: 20px;
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+            <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+          <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
@@ -1011,6 +1873,9 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
@@ -1027,6 +1892,9 @@ letter-spacing: 20px;
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
@@ -1039,9 +1907,81 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+                <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
 
       <!-- There is also keypress and keyup -->
@@ -1057,6 +1997,78 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
@@ -1074,6 +2086,9 @@ letter-spacing: 20px;
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
        <h4><!-- Blur Events : --> {{blur}}</h4>
@@ -1083,6 +2098,58 @@ letter-spacing: 20px;
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
@@ -1098,6 +2165,9 @@ letter-spacing: 20px;
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Click Events : --> {{click}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
@@ -1116,6 +2186,9 @@ letter-spacing: 20px;
      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <!-- There is also keypress and keyup -->
@@ -1132,6 +2205,61 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
 
@@ -1149,6 +2277,9 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
 
@@ -1163,6 +2294,9 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <!-- There is also keypress and keyup -->
 <!--       <h4>Key Pressed : {{kdKey}}</h4> -->
@@ -1171,6 +2305,9 @@ letter-spacing: 20px;
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
          <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+               <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
@@ -1192,6 +2329,9 @@ letter-spacing: 20px;
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <h4><!-- Change Events : --> {{change}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
 
       <!-- There is also keypress and keyup -->
 <!--       <h4>Key Pressed : {{kdKey}}</h4> -->
@@ -1207,6 +2347,9 @@ letter-spacing: 20px;
       <h4><!-- Click Events : --> {{click}}</h4>
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
@@ -1226,6 +2369,9 @@ letter-spacing: 20px;
       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
@@ -1244,6 +2390,58 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Blur Events : --> {{blur}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+      <h4><!-- Change Events : --> {{change}}</h4>
+
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+           <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Focus Events : --> {{focus}}</h4>
+                  <h4><!-- Click Events : --> {{click}}</h4>
+                        <h4><!-- Change Events : --> {{change}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4>
+       <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <h4><!-- Change Events : --> {{change}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Click Events : --> {{click}}</h4>
+      <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+        <h4><!-- Change Events : --> {{change}}</h4>
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+
+           <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <!-- There is also keypress and keyup -->
 <!--       <h4>Key Pressed : {{kdKey}}</h4> -->
@@ -1251,6 +2449,23 @@ letter-spacing: 20px;
       <!-- There is also mousedown, mousemove, mouseover and mouseup -->
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+         <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
          <h4><!-- Double Click Events : --> {{dblclick}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
@@ -1266,6 +2481,9 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <!-- There is also keypress and keyup -->
 <!--       <h4>Key Pressed : {{kdKey}}</h4> -->
@@ -1274,6 +2492,23 @@ letter-spacing: 20px;
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
          <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+               <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
+      <h4><!-- Copy Events : --> {{copy}}</h4>
+      <h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4>
+      <!-- There is also keypress and keyup -->
+<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
+
+      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
+      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
+         <h4><!-- Double Click Events : --> {{dblclick}}</h4>
+               <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
@@ -1288,28 +2523,9 @@ letter-spacing: 20px;
       <h4><!-- Copy Events : --> {{copy}}</h4>
       <h4><!-- Paste Events : --> {{paste}}</h4>
       <h4><!-- Cut Events : --> {{cut}}</h4>
-      <h4><!-- Focus Events : --> {{focus}}</h4>
-      <!-- There is also keypress and keyup -->
-<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
-
-      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
-      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
-      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
-         <h4><!-- Double Click Events : --> {{dblclick}}</h4>
-      <h4><!-- Copy Events : --> {{copy}}</h4>
-      <h4><!-- Paste Events : --> {{paste}}</h4>
-      <h4><!-- Cut Events : --> {{cut}}</h4>
-      <h4><!-- Focus Events : --> {{focus}}</h4>
-      <!-- There is also keypress and keyup -->
-<!--       <h4>Key Pressed : {{kdKey}}</h4> -->
-
-      <!-- There is also mousedown, mousemove, mouseover and mouseup -->
-      <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
-      <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
-         <h4><!-- Double Click Events : --> {{dblclick}}</h4>
-      <h4><!-- Copy Events : --> {{copy}}</h4>
-      <h4><!-- Paste Events : --> {{paste}}</h4>
-      <h4><!-- Cut Events : --> {{cut}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Focus Events : --> {{focus}}</h4>
       <!-- There is also keypress and keyup -->
 <!--       <h4>Key Pressed : {{kdKey}}</h4> -->
@@ -1325,6 +2541,9 @@ letter-spacing: 20px;
 
       <!-- There is also mousedown, mousemove, mouseover and mouseup -->
       <h4><!-- Mouse Enter Events : --> {{mouseenter}}</h4>
+            <h4><!-- Cut Events : --> {{cut}}</h4>
+      <h4><!-- Focus Events : --> {{focus}}</h4><h4><!-- Paste Events : --> {{paste}}</h4>
+      <h4><!-- Blur Events : --> {{blur}}</h4>
       <h4><!-- Mouse Leave Events : --> {{mouseleave}}</h4>
 </div>
 </div>
