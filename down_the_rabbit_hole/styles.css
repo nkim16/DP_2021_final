@@ -427,6 +427,35 @@ font-style: normal;
 letter-spacing: 0em;
 }
 
+.pop-up:hover{
+/*  background-color: yellow;*/
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  border: 20px solid white;
+  border-radius: 500px;
+  font-size: 5em;
+  overflow-y: hidden;
+  margin: auto 0;
+  color: white;
+  top:20%;
+  line-height: 0.9em;
+   filter: drop-shadow(1px 1px 10px white);
+   animation-name: warning;
+   animation-duration: 0.3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+     font-family: input-serif-condensed, serif;
+background-color: black;
+font-weight: 200;
+
+font-style: normal;
+letter-spacing: 0em;
+cursor: pointer;
+}
+
 .links{
   width: 100vw;
   margin: auto;
