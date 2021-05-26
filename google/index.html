@@ -44,6 +44,7 @@ body {
   font-weight:400;
   font-size: 2em;
   overflow-x: hidden;
+  background-color: #82b8c2;
 
 }
 
@@ -123,7 +124,22 @@ h1:hover{
   animation: exaggerate 5s ease-in-out infinite alternate;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+    border: 2px solid black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow; 
+    border: 2px solid black;
+}
 
 #blue{
   color:#5186EC;
@@ -518,7 +534,7 @@ letter-spacing: 20px;
           </form>
           </div> -->
 
-          <h1 class="google"><span id="blue">G</span><span id="red">o</span><span id="yellow">o</span><span id="blue">g</span><span id="green">l</span><span id="red">e</span></h1>
+<!--           <h1 class="google"><span id="blue">G</span><span id="red">o</span><span id="yellow">o</span><span id="blue">g</span><span id="green">l</span><span id="red">e</span></h1> -->
 
 <script type="text/javascript">
 
@@ -585,23 +601,28 @@ letter-spacing: 20px;
           </a>
 
             <a href="https://nkim16.github.io/random/variable_type/" target="_blank"><input type="submit2" value="What's More"></a>
-          
-                         <!--  <script>
-  (function() {
-    var cx = '011833858776650720395:4l5dii3zv2w';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-      '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-<button>Random search</button> -->
           </form> 
 
+          <form>
+                <input type="text" title="Search" class="gcse-search" data-resultsUrl="http://www.example.com" data-newWindow="true" data-queryParameterName="search"ng-blur="blur = blur + 1"
+      ng-click="click = click + 1"
+      ng-dblclick="dblclick = dblclick + 1"
+      ng-copy="copy = copy + 1"
+      ng-paste="paste = paste + 1"
+      ng-cut="cut = cut + 1"
+      ng-focus="focus = focus + 1"
+      ng-model="confirmed"
+      ng-change="change = change + 1"
+      ng-keydown="keydown($event)"
+      ng-mouseenter="mouseenter = mouseenter + 1"
+      ng-mouseleave="mouseleave = mouseleave + 1"/>
+
+          <a href="#" target="_blank"><input type="submit" value="Google Search" id="search_button" onClick="goSomewhere(); return false;">
+          </a>
+
+            <a href="https://nkim16.github.io/random/variable_type/" target="_blank"><input type="submit2" value="What's More"></a>
+          </form> 
+          
           
           <br> 
           
