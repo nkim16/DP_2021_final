@@ -34,7 +34,7 @@ body{
     height: 100vh;
 /*     border-right:  100px solid black; 
      border-left:  100px solid black; */
-
+overflow-y: hidden;
        
 }
 
@@ -52,39 +52,12 @@ body{
   z-index: -20;
 
 }
-/*
-.text {
-  position: fixed;
 
-  margin-top: calc(var(--font-size) / -1);
-  font-variation-settings: "wght" var(--font-weight);
-  text-align: center;
-  line-height: 102%;
+.enter{
+  margin:7%;
+}
 
-    text-transform: uppercase;
 
-    font-size: 10vw;
-    color:black;
-    margin: auto;
-    z-index: 2;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-     word-wrap: break-word;
-
-     filter: drop-shadow(1px 15px 10px red);
-     margin: 0;
-     padding: 0;
-     top: 3%;
-     text-align: center;
-  font-family: input-serif-condensed, serif;
-
-font-weight: 200;
-    color: yellow;
-  text-shadow: -1px 0 #0000ff, 0 1px black, 1px 0 #ff5abd, 0 -1px black;
-
-font-style: normal;
-
-}*/
 
 
 .pixel{
@@ -400,18 +373,18 @@ width: 100%;
 
 .pop-up{
 /*  background-color: yellow;*/
-  height: 50%;
-  width: 50%;
+  height: 40vh;
+  width: 50vw;
   position: absolute;
   z-index: 2;
   text-align: center;
-  border: 20px solid white;
-  border-radius: 500px;
+  border: 10px solid white;
+  border-radius: 50%;
   font-size: 3vw;
   overflow-y: hidden;
   margin: auto 0;
   color: white;
-  top:20%;
+  top:26%;
   line-height: 0.9em;
    filter: drop-shadow(1px 1px 10px white);
    animation-name: warning;
@@ -428,18 +401,17 @@ letter-spacing: 0em;
 
 .pop-up:hover{
 /*  background-color: yellow;*/
-  height: 50%;
-  width: 50%;
+  height: 42vh;
+  width: 52vw;
   position: absolute;
   z-index: 2;
   text-align: center;
-  border: 20px solid white;
-  border-radius: 500px;
+  border: 12px solid white;
+  border-radius: 50%;
   font-size: 3vw;
   overflow-y: hidden;
   margin: auto 0;
   color: white;
-  top:20%;
   line-height: 0.9em;
    filter: drop-shadow(1px 1px 100px white);
    animation-name: warning;
@@ -472,10 +444,11 @@ a {
 a:visited {
   background-color: black;
   /*color: #6ec5ff;*/
-  color: black;
+  color: white;
 }
 a:hover {
   background-color: black;
+  color: white;
 }
 a:active {
   color: #fbff03;
@@ -589,7 +562,7 @@ nav ul img {
 
 a:link,
 a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
