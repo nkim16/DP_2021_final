@@ -7,6 +7,145 @@
 <link rel="stylesheet" type="text/css" href="style.css">
    <link rel="stylesheet" href="https://use.typekit.net/mjy2iod.css">
        <title>Buttons</title>
+</head>
+<body>
+ <li class="list_left"> <button id="hiBtn" class='textlink' target="_blank" style="position: absolute; left: 1.6%; top:-1%;  animation: none; background-color: transparent;"> About </button></li>
+
+        <li > <a href='https://nkim16.github.io/DP_2021_final/profile/'><div  style="position: absolute; top:-1.4%; right: -78.5%;animation: none;" class='textlink'><img style="width:8%; height:8%;background-color:transparent;" src="hole-02.png" ></div> </a></li>
+
+<!-- The Modal -->
+<div id="myModal02" class="modal02">
+
+  <!-- Modal content -->
+  <div class="modal02-content">
+    <span class="close">&times;</span>
+    <p class="modal02-txt">INFORMATION OVERLOAD<br><br>You’re in deep now…at this point there is a loss of control in what you want to see and what you want to do. What is the point of searching, when YouTube hands you a plethora of recommended videos? </p>
+  </div>
+
+</div>
+
+
+<style>
+.hiddendiv{
+background: black;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+.modal02 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: -15%;
+  width: 100%; /* Full width */
+  height: 200%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+
+}
+
+/* Modal Content/Box */
+.modal02-content {
+  background-color: #ff5abd;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  border: 2px solid black;
+  border-top: 30px solid black;
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: 15%;
+
+}
+
+.close{
+  color:transparent;
+  text-shadow:none;
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal02-txt{
+  font-size: 1vw;
+  font-family: input-serif-condensed, serif;
+    font-weight: 200;
+    font-style: normal;
+      text-shadow:none;
+      color: black;
+}
+
+button{
+      background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
+font-style: normal;
+  font-size: 1vw;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+
+button:hover{
+      text-decoration: underline;
+      color: white;
+}
+
+li {
+  display: inline;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2.6em;
+  list-style-type: none;
+
+}
+
+</style>
+
+<script>
+
+var modal02 = document.getElementById("myModal02");
+
+// Get the button that opens the modal
+var btn = document.getElementById("hiBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal02.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal02.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal02) {
+    modal02.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
+
 <style>
 
 body {
@@ -17,6 +156,7 @@ body {
     background: rgb(161,164,132);
 background: linear-gradient(180deg, rgba(21,115,101,1) 0%, rgba(58,98,62,1) 100%);
 overflow-x: hidden;
+height: 230vh;
 }
 
 .design{
@@ -57,7 +197,7 @@ button:hover{
 
 /* The Close Button */
 .close {
-  color: white;
+  color: transparent;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -209,6 +349,7 @@ border: none;
   position: absolute;
   top: 1.8%;
     text-shadow: none;
+    color: black;
 }
 .textlink:hover {
   text-decoration: underline;
@@ -218,155 +359,10 @@ border: none;
 
 
 </style>
-</head>
-<body>
-
-
-        <section><nav>
-      <ul>
-        <li class="list_left"> <button  id="dont" id="hiBtn" class='textlink' target="_blank" style="position: absolute; left: 1.4%; top:-1%;"> About </button></li>
-<!--         <li> <a href='#' class='textlink'> Gmail </a></li> -->
-
-        <li > <a href="https://nkim16.github.io/DP_2021_final/embarrassing/"  style="position: absolute; top:-1.3%; right: 0.9%;animation: none;" class='textlink'><img style="width:8%; height:8%;background-color:transparent;" src="hole-02.png"> </a></li>
-
-
-      </ul>
-    </nav>
-
-    <!-- The Modal -->
-<div id="myModal02" class="modal02">
-
-  <!-- Modal content -->
-  <div class="modal02-content">
-    <span class="close">&times;</span>
-    <p class="modal02-txt">Images page is dedicated to show how this bombardment of images are short lasting in our heads. The disappearing images represent how quickly we often forget what we search up while the text leaves a permanent trail in our search history. While we forget the images that we see, our computer holds the information through text</p>
-  </div>
-
-</div>
-
-
-<style>
-
-  #dont{
-    background-color: none;
-     animation: none;
-  }
-
-  #dont:hover{
-    background-color: none;
-     animation: none;
-  }
-
-/*  @keyframes dontmove {
-  from {background-color: #ff8500;}
-  to {background-color: #7b2cbf;}
-}*/
-.hiddendiv{
-background: black;
-    width: 0.25rem;
-    height: 0.25rem;
-    position: absolute;
-}
-
-.clicker:focus + .hiddendiv{
-display:block;
-}
-
-.modal02 {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
-  left: 0;
-  top: -15%;
-  width: 100%; /* Full width */
-  height: 200%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: transparent; /* Fallback color */
-
-}
-
-/* Modal Content/Box */
-.modal02-content {
-  background-color: #ff5abd;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 50px;
-  border: 2px solid black;
-  border-top: 30px solid black;
-  width: 40%; /* Could be more or less, depending on screen size */
-  height: 30%;
-
-}
-
-.close{
-  color:transparent;
-  text-shadow:none;
-}
 
 
 
-.close:hover,
-.close:focus {
-  color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal02-txt{
-  font-size: 1vw;
-  font-family: input-serif-condensed, serif;
-    font-weight: 200;
-    font-style: normal;
-      text-shadow:none;
-      color: black;
-}
-
-button{
-      background-color: transparent;
-  font-family: input-serif-condensed, serif;
-
-font-weight: 200;
-
-font-style: normal;
-  font-size: 1vw;
-  color: black;
-  border: none;
-  text-decoration: none;
-}
-
-button:hover{
-      text-decoration: underline;
-}
-
-
-</style>
-
-<script>
-
-var modal02 = document.getElementById("myModal02");
-
-// Get the button that opens the modal
-var btn = document.getElementById("hiBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal02.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal02.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal02) {
-    modal02.style.display = "none";
-  }
-}
-</script>
+<div class="group" style="position: absolute; z-index: -100; top:10%;">
 <a href="https://www.youtube.com/watch?v=PkgoBnN9V2g" target="_blank"><img class="img-style" id="image01" src="01-19.png" style="display:none" width="600" /></a>
 <a href="https://www.youtube.com/watch?v=39qM789Zw2A" target="_blank"><img class="img-style" id="image02" src="img-20.png" style="display:none; left:10%; top:40%;" width="600" /></a>
 <a href="https://www.youtube.com/watch?v=odE2IkwaRsk" target="_blank"><img class="img-style" id="image03" src="img-21.png" style="display:none; left:60%; top:100%" width="600" /></a>
@@ -806,7 +802,7 @@ window.onclick = function(event) {
 <a href="https://www.youtube.com/watch?v=WDDE3TcUq24" onclick="return popitup('https://www.youtube.com/watch?v=WDDE3TcUq24')"><button class="design">Today's hottest!</button></a>
 
 <a href="href='https://nkim16.github.io/DP_2021_final/buttons/" onclick="return popitup('https://nkim16.github.io/DP_2021_final/buttons/4')"><button class="design">WOWZA</button></a>
-
+</div>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
