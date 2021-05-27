@@ -645,3 +645,15 @@ button:hover{
 }
 
 
+.unique{
+      text-align: center;
+      font-size: 3vw;
+      color: white;
+      line-height: 0.9em;
+      font-family: input-serif-condensed, serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0em;
+    filter: drop-shadow(1px 1px 10px white);
+    color: white;
+}
