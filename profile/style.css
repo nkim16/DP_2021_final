@@ -56,7 +56,7 @@ p{
 }
 
 #dest{
-  border: 2px solid #ffc400;
+  border: 2px solid white;
 }
 #dest:hover{
   background-color: #ffdd00; /* For browsers that do not support gradients */
@@ -70,7 +70,7 @@ p{
 }
 
 #stu{
-  border: 2px solid #009c10;
+  border: 2px solid white;
 }
 #stu:hover{
   background-color: #2dbf00; /* For browsers that do not support gradients */
@@ -82,7 +82,7 @@ p{
 }
 
 #cur{
-  border: 2px solid blue;
+  border: 2px solid white;
 }
 
 #cur:hover{
@@ -96,7 +96,7 @@ p{
 }
 
 #bor{
-  border: 2px solid red;
+  border: 2px solid white;
 }
 #bor:hover{
   background-color: #f55142; /* For browsers that do not support gradients */
@@ -108,7 +108,7 @@ p{
 }
 
 #sm{
-  border: 2px solid #009c10;
+  border: 2px solid white;
 }
 #sm:hover{
   background-color: #2dbf00; /* For browsers that do not support gradients */
