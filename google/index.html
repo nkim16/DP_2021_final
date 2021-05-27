@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script async src="https://cse.google.com/cse.js?cx=123:456"></script>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://use.typekit.net/mjy2iod.css">
 
 
@@ -44,7 +45,9 @@ body {
   font-weight:400;
   font-size: 2em;
   overflow-x: hidden;
-  background-color: #82b8c2;
+  overflow-y: hidden;
+  background: rgb(112,160,192);
+background: linear-gradient(180deg, rgba(112,160,192,1) 0%, rgba(130,184,194,1) 100%);
 
 }
 
@@ -60,7 +63,7 @@ nav ul li {
   margin: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 1.3em;
 
 }
 
@@ -72,23 +75,26 @@ nav ul img {
 
 .list_left{
   text-align: left;
-  left: 10px;
-}
 
+    font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
+}
+.textlink{
+      font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.4em;
+  position: absolute;
+  top: 1.8%;
+}
 .textlink:hover {
   text-decoration: underline;
+  color: white;
 }
 
 
-a:link,
-a:visited {
-  color: black;
-  text-decoration: none;
-}
 
-/* .central a:hover{
-  text-decoration: underline;
-} */
+
 button{
   outline: none;
 }
@@ -482,21 +488,128 @@ letter-spacing: 20px;
     z-index:-10;
     top: 1%;
 }
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+a:hover {
+  background-color: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.move{
+  position: absolute;
+  top: 50%;
+}
+
+
     </style>
   </head>
   <body>
 
     <section><nav>
       <ul>
-        <li class="list_left"> <a href='https://nkim16.github.io/DP_2021_final/about/' class='textlink' target="_blank"> About </a></li>
+        <li class="list_left"> <button id="myBtn" class='textlink' target="_blank" style="position: absolute; left: 2%;"> About </button></li>
 <!--         <li> <a href='#' class='textlink'> Gmail </a></li> -->
-        <li> <a href='https://nkim16.github.io/DP_2021_final/images/' class='textlink' target="_blank"> Images </a></li>
-        <li>
-          <a href='#'> <img src='https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fflatfrogblog.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fapp-launcher-150x150.png&container=blogger&gadget=a&rewriteMime=image%2F*'> </a>
-        </li>
-        <li> <a href='#' class='button blue'> Sign in </a></li>
+        <li> <a href='https://nkim16.github.io/DP_2021_final/images/' class='textlink' style="position: absolute; right: 2%;"> Images </a></li>
+
       </ul>
     </nav>
+
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="modal-txt">Images page is dedicated to show how this bombardment of images are short lasting in our heads. The disappearing images represent how quickly we often forget what we search up while the text leaves a permanent trail in our search history. While we forget the images that we see, our computer holds the information through text</p>
+  </div>
+
+</div>
+<style>
+  .hiddendiv{
+background: black;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: -15%;
+  width: 100%; /* Full width */
+  height: 200%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ff5abd;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  border: 2px solid black;
+  border-top: 30px solid black;
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: 30%;
+
+}
+
+.close{
+  color:transparent;
+  text-shadow:none;
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-txt{
+  font-size: 1vw;
+  font-family: input-serif-condensed, serif;
+    font-weight: 200;
+    font-style: normal;
+      text-shadow:none;
+      color: black;
+}
+
+button{
+      background-color: transparent;
+  font-family: input-serif-condensed, serif;
+
+font-weight: 200;
+
+font-style: normal;
+  font-size: 1vw;
+  color: black;
+  border: none;
+}
+
+button:hover{
+      text-decoration: underline;
+}
+
+
+  </style>
     
     <section id="container">
       
@@ -583,6 +696,12 @@ letter-spacing: 20px;
 
 
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div  class="move">
           <form>
                 <input type="text" title="Search" class="gcse-search" data-resultsUrl="http://www.example.com" data-newWindow="true" data-queryParameterName="search"ng-blur="blur = blur + 1"
       ng-click="click = click + 1"
@@ -600,33 +719,14 @@ letter-spacing: 20px;
           <a href="#" target="_blank"><input type="submit" value="Google Search" id="search_button" onClick="goSomewhere(); return false;">
           </a>
 
-            <a href="https://nkim16.github.io/random/variable_type/" target="_blank"><input type="submit2" value="What's More"></a>
+<!--             <a href="https://nkim16.github.io/random/variable_type/" target="_blank"><input type="submit2" value="What's More"></a> -->
           </form> 
 
-          <form>
-                <input type="text" title="Search" class="gcse-search" data-resultsUrl="http://www.example.com" data-newWindow="true" data-queryParameterName="search"ng-blur="blur = blur + 1"
-      ng-click="click = click + 1"
-      ng-dblclick="dblclick = dblclick + 1"
-      ng-copy="copy = copy + 1"
-      ng-paste="paste = paste + 1"
-      ng-cut="cut = cut + 1"
-      ng-focus="focus = focus + 1"
-      ng-model="confirmed"
-      ng-change="change = change + 1"
-      ng-keydown="keydown($event)"
-      ng-mouseenter="mouseenter = mouseenter + 1"
-      ng-mouseleave="mouseleave = mouseleave + 1"/>
 
-          <a href="#" target="_blank"><input type="submit" value="Google Search" id="search_button" onClick="goSomewhere(); return false;">
-          </a>
-
-            <a href="https://nkim16.github.io/random/variable_type/" target="_blank"><input type="submit2" value="What's More"></a>
-          </form> 
-          
-          
+      </div>
           <br> 
           
-          <p>We guess you want to search: <br> <a href='https://www.google.com/search?q=funny+birds&rlz=1C5CHFA_enUS843US843&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjYp8G_48XwAhWom-AKHT_VAToQ_AUoAnoECAEQBA&biw=1514&bih=886' span id="keywords">funny birds,</a> 
+         <!--  <p>We guess you want to search: <br> <a href='https://www.google.com/search?q=funny+birds&rlz=1C5CHFA_enUS843US843&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjYp8G_48XwAhWom-AKHT_VAToQ_AUoAnoECAEQBA&biw=1514&bih=886' span id="keywords">funny birds,</a> 
             <a href='https://coinmarketcap.com/currencies/shiba-inu/' span id="keywords">SHIB coin price, </a> 
             <a href='https://www.google.com/search?q=restaurants+near+me&rlz=1C5CHFA_enUS843US843&ei=mKWcYLzEF8Kxggextr2YDA&oq=closest+restaurant&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQRxCwAzIHCAAQsAMQQzIHCAAQsAMQQ1AAWABgqA1oAXACeACAAUiIAUiSAQExmAEAqgEHZ3dzLXdpesgBCsABAQ&sclient=gws-wiz' span id="keywords">closest restaurant near me</a></p> <br>
           <div class="column">
@@ -637,9 +737,9 @@ letter-spacing: 20px;
             <div class="sub1"><p>Did you know: <br> 
               <a href='https://time.com/6046072/bill-melinda-gates-divorce-couples-therapists/' span id="keywords">Bill Gates Divorced & Now It's Your Chance </a> <span id="hot">hot!</span>
                 <br> <a href='https://www.politico.com/news/2021/05/12/ohio-vaccinated-adults-lottery-drawing-487726' span id="keywords">Ohio offers vaccinated a chance to win big bucks </a>
-                <br> <a href='https://support.apple.com/en-us/HT212227' span id="keywords">Apple Tag Got Lost</a> <span id="hot">hot!</span></p></div>
+                <br> <a href='https://support.apple.com/en-us/HT212227' span id="keywords">Apple Tag Got Lost</a> <span id="hot">hot!</span></p></div> -->
           </div>
-  <div style=" position:absolute; left: -70%; z-index:-10; top:-15%; text-align: center; width: 100vw; overflow-x: hidden; overflow-y: hidden;">
+  <div style=" position:absolute; left: 0%; z-index:-10; top:5%; text-align: center; width: 100vw; overflow-x: hidden; overflow-y: hidden;">
           <div class="reading">
       <h4><!-- Blur Events : --> {{blur}}</h4>
         <h4><!-- Change Events : --> {{change}}</h4>
@@ -2576,7 +2676,35 @@ letter-spacing: 20px;
       </div>
 
     </section>
-  
+
+
+
+<script>
+  var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
     <footer>
       <ul>
 <!--         <li> <div class='left'> Advertising </a></li>

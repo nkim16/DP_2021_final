@@ -4,9 +4,12 @@ body {
   font-weight: 100;
   font-size: 4vw;
 /*  color: blue;*/
-background-color: black;
+background: rgb(32,46,33);
+background: linear-gradient(180deg, rgba(32,46,33,1) 0%, rgba(0,0,0,1) 20%);
+height: 100vh;
   text-align: center;
   overflow-x:hidden;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 
@@ -25,7 +28,7 @@ button{
   color: black;
   border: 2px solid blue;
   padding: 10px;
-  border-radius: 20px;
+/*  border-radius: 20px;*/
   padding: 35px 60px;
   text-align: center;
   outline: none;
@@ -190,6 +193,9 @@ font-style: italic;
   text-shadow: -1px 0 #0000ff, 0 1px black, 1px 0 #ff5abd, 0 -1px black;
     font-family: input-serif-condensed, serif;
     font-weight: 400;
+    font-size: 2vw;
+    margin-bottom: 5%;
+     margin-top: 18%;
 }
 
 .txt-box{
@@ -308,5 +314,7 @@ h4{
   font-family: Roboto, sans-serif;
   font-weight: 100;
 }
+
+
 
 

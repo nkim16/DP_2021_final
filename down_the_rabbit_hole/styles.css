@@ -28,7 +28,8 @@ font-style: normal;
 body{
     /*background-color: #f0e7e6;*/
 /*    background-color: #ff5abd;*/
-    background-color:   #63a1c4;
+background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(112,160,192,1) 100%);
     overflow-x: hidden;
     width:100vw;
     height: 100vh;
@@ -447,8 +448,9 @@ a:visited {
   color: white;
 }
 a:hover {
-  background-color: black;
-  color: white;
+  background-color: none;
+  color: black;
+  text-decoration: underline;
 }
 a:active {
   color: #fbff03;
@@ -562,7 +564,84 @@ nav ul img {
 
 a:link,
 a:visited {
-  color: white;
+  color: black;
   text-decoration: none;
 }
+
+a:hover {
+  background-color: none;
+  color: black;
+  text-decoration: underline;
+}
+
+.hiddendiv{
+background: black;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: -15%;
+  width: 100%; /* Full width */
+  height: 200%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ff5abd;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  border: 2px solid black;
+  border-top: 30px solid black;
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: 30%;
+
+}
+
+.close{
+  color:transparent;
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-txt{
+  font-size: 1vw;
+}
+
+button{
+      background-color: transparent;
+border: none;
+
+font-style: normal;
+  font-size: 1vw;
+  color: black;
+}
+
+button:hover{
+      text-decoration: underline;
+}
+
+.highlight{
+  background-color: #e6eced;
+}
+
 

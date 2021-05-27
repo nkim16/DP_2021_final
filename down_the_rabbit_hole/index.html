@@ -14,7 +14,7 @@
   <body>
     <section><nav>
           <ul>
-        <li style="position:absolute; left:2%;"> <a href='https://nkim16.github.io/DP_2021_final/about/' class='button blue'> About </a></li>
+        <li style="position:absolute; left:2%;"> <button id="myBtn"  class='button blue'> About </button></li>
         <li style="position:absolute; right:2%;"> <a href='https://nkim16.github.io/DP_2021_final/google/' class='button blue'> Sign in </a></li>
       </ul>
     </nav>
@@ -25,6 +25,46 @@
 
       <div class="pop-up"><p class="enter"><Br>ENTER<BR> RABBIT HOLE<br> AT YOUR <br>OWN RISK<br></p></div>
     </div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="modal-txt">"Down the Rabbit Hole"</span> is a project about the <span class="highlight">self</span> and the processes and the <span class="highlight">tools</span> that are involved in searching: the <span class="highlight">loss of control</span> and the <span class="highlight">loss of thoughts</span> that are often involved in browsing. By looking back at my search history, I realize how <span class="highlight">dependent</span> I am on these platforms and how our actions are constantly directed by tools--tools that are given to us by these big corporations. <!-- Search histories are essential to big name companies such as Google to profile people—infringing our privacy rights. -->
+ By looking back at my search history, I realize this tool stands for my than how I view myself but how these corporations view me. I wanted to attempt to reveal this human and intimate process of how an excess of information often leads us to go down a rabbit hole through our interactions and the <span class="highlight">trail</span> that is left behind in our search history that is then picked up by Google and used to promote our rabbit hole tendencies.  <br><br>
+
+  But how true is this <span class="highlight">identity</span> that I present on the internet? Is it an overly <span class="highlight">simplified</span> version of who I truely am? By going down a rabbit hole, I am navigating websites that were never intended to be saved it's an archive of something that seemed useless and mindless that turned into somethig permanent. But these footprints are the only thing left behind and is our identity once we shut off our computers. This website which essentially stands as a <span class="highlight">self portrait</span>; is about my searching habits and the loss of control that is often felt with entering these rabbit holes. </p>
+  </div>
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
  
   </body>
 </html>

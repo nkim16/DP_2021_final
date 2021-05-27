@@ -5,18 +5,23 @@
    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/mjy2iod.css">
     <title>Images</title>
 </head>
 <style>
+
 body{
     color: yellow;
   text-shadow: -1px 0 #0000ff, 0 1px black, 1px 0 #ff5abd, 0 -1px black;
     font-family: 'Roboto', sans-serif;
   font-weight: 400;
-/*  background-color: #ff5abd;*/
-  background-color: #a1a484;
+ background-repeat: repeat-y;
 
+background: rgb(130,184,194);
+background: linear-gradient(180deg, rgba(130,184,194,1) 0%, rgba(161,164,132,1) 100%);
+height: 250vh;
+width: 250vw;
 }
 .img__img{
   opacity: 0;
@@ -121,9 +126,9 @@ display:block;
   position: fixed; /* Stay in place */
   z-index: 100; /* Sit on top */
   left: 0;
-  top: 0;
+  top: -15%;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 200%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: transparent; /* Fallback color */
 
@@ -133,30 +138,35 @@ display:block;
 .modal-content {
   background-color: #ff5abd;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 50px;
   border: 2px solid black;
   border-top: 30px solid black;
   width: 40%; /* Could be more or less, depending on screen size */
+  height: 30%;
+
 }
 
-/* The Close Button */
-.close {
-  color: yellow;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-    background-color: black;
+.close{
+  color:transparent;
+  text-shadow:none;
 }
+
+
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: transparent;
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-txt{
-  font-size: 2vw;
+  font-size: 1vw;
+  font-family: input-serif-condensed, serif;
+    font-weight: 200;
+    font-style: normal;
+      text-shadow:none;
+      color: black;
 }
 
 button{
@@ -186,9 +196,49 @@ font-style: normal;
 
 }
 
+
+nav {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2.6em;
+
+}
+button{
+border: none;
+}
+
+.textlink{
+      font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.4em;
+  position: absolute;
+  top: 1.8%;
+    text-shadow: none;
+}
+.textlink:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 </style>
 <body>
-<button id="myBtn">About</button>
+      <section><nav>
+      <ul>
+        <li class="list_left"> <button id="myBtn" class='textlink' target="_blank" style="position: absolute; left: 2%;"> About </button></li>
+<!--         <li> <a href='#' class='textlink'> Gmail </a></li> -->
+        <li > <button href='https://nkim16.github.io/DP_2021_final/images/'  style="position: absolute; right: 2%;" class='textlink'>Images </a></button></li>
+
+      </ul>
+    </nav>
+
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -1636,7 +1686,7 @@ font-style: normal;
       <img class="img__img" src="dp_images/side-profile.png" />
 </div>
 
-
+</body>
 
 <script>
 //Make the DIV element draggagle:
@@ -1705,5 +1755,5 @@ window.onclick = function(event) {
 }
 </script>
 
-</body>
+
 </html>
